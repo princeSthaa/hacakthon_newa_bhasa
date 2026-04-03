@@ -21,5 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('', include('newa_bhasa.urls')),  # ✅ add this
+    path('data/', include('newa_bhasa.urls')),  #for dataset
+    path("users/", include("users.urls")),   # for user 
 ]
