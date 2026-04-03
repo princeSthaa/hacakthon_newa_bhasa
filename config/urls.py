@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from newa_bhasa.views import get_words
+from newa_bhasa.views import get_values
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(
         'api/<str:category>/<str:level>/json.json',
-        get_words
+        get_values,
     ),
 ]
