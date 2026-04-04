@@ -4,7 +4,7 @@
         "english": "Dog",
         "newari": "खिचा",
         "category": "Animals",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Animals/Images/Dog.jpg",
         "audio_path": "/media/Animals/Recordings/Dog.m4a"
     },
@@ -13,7 +13,7 @@
         "english": "Cat",
         "newari": "भौ चा",
         "category": "Animals",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Animals/Images/Cat.jpg",
         "audio_path": "/media/Animals/Recordings/Cat.m4a"
     },
@@ -22,7 +22,7 @@
         "english": "Cow",
         "newari": "सा",
         "category": "Animals",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Animals/Images/Cow.jpg",
         "audio_path": "/media/Animals/Recordings/Cow.m4a"
     },
@@ -31,7 +31,7 @@
         "english": "Lion",
         "newari": "सिंग",
         "category": "Animals",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Animals/Images/Lion.jpg",
         "audio_path": "/media/Animals/Recordings/Lion.m4a"
     },
@@ -49,7 +49,7 @@
         "english": "Bird",
         "newari": "चखुंचा",
         "category": "Animals",
-        "level": 2,
+        "level": 7,
         "image_path": "/media/Animals/Images/Bird.jpg",
         "audio_path": "/media/Animals/Recordings/Bird.m4a"
     },
@@ -58,7 +58,7 @@
         "english": "Fish",
         "newari": "न्या",
         "category": "Animals",
-        "level": 2,
+        "level": 7,
         "image_path": "/media/Animals/Images/Fish.jpg",
         "audio_path": "/media/Animals/Recordings/Fish.m4a"
     },
@@ -67,7 +67,7 @@
         "english": "Monkey",
         "newari": "माक",
         "category": "Animals",
-        "level": 2,
+        "level": 7,
         "image_path": "/media/Animals/Images/Monkey.jpg",
         "audio_path": "/media/Animals/Recordings/Monkey.m4a"
     },
@@ -76,7 +76,7 @@
         "english": "Elephant",
         "newari": "किसि",
         "category": "Animals",
-        "level": 3,
+        "level": 7,
         "image_path": "/media/Animals/Images/Elephant.jpg",
         "audio_path": "/media/Animals/Recordings/Elephant.m4a"
     },
@@ -85,7 +85,7 @@
         "english": "Rat",
         "newari": "छुँ",
         "category": "Animals",
-        "level": 3,
+        "level": 7,
         "image_path": "/media/Animals/Images/Rat.jpg",
         "audio_path": "/media/Animals/Recordings/Rat.m4a"
     },
@@ -94,7 +94,7 @@
         "english": "Peacock",
         "newari": "म्हेखा",
         "category": "Animals",
-        "level": 3,
+        "level": 12,
         "image_path": "/media/Animals/Images/Peacock.jpg",
         "audio_path": "/media/Animals/Recordings/Peacock.m4a"
     },
@@ -103,7 +103,7 @@
         "english": "Housefly",
         "newari": "भुजीं",
         "category": "Animals",
-        "level": 3,
+        "level": 12,
         "image_path": "/media/Animals/Images/Housefly.jpg",
         "audio_path": "/media/Animals/Recordings/Housefly.m4a"
     }
