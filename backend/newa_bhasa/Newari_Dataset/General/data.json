@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "english": "Hello",
+        "newari": "ज्वजलपा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/hello.jpg",
+        "audio_path": "/media/general/Recordings/Hello.m4a"
+    },
+    {
+        "id": 2,
+        "english": "Thank you",
+        "newari": "सुभाय्",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Thank you.jpg",
+        "audio_path": "/media/general/Recordings/Thank you.m4a"
+    },
+    {
+        "id": 3,
+        "english": "Welcome",
+        "newari": "लशकुश",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Welcome.jpg",
+        "audio_path": "/media/general/Recordings/Welcome.m4a"
+    },
+    {
+        "id": 4,
+        "english": "How are you?",
+        "newari": "म्हं फु ला?",
+        "category": "general",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 5,
+        "english": "I am fine",
+        "newari": "जि त ठिक जु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/I am Fine.jpg",
+        "audio_path": "/media/general/Recordings/I am fine.m4a"
+    },
+    {
+        "id": 6,
+        "english": "Yes",
+        "newari": "ख",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Yes.jpg",
+        "audio_path": "/media/general/Recordings/Yes.m4a"
+    },
+    {
+        "id": 7,
+        "english": "No",
+        "newari": "मखु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/No.jpg",
+        "audio_path": "/media/general/Recordings/No.m4a"
+    },
+    {
+        "id": 8,
+        "english": "Sorry",
+        "newari": "छ्यमा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sorry.jpg",
+        "audio_path": "/media/general/Recordings/Sorry.m4a"
+    },
+    {
+        "id": 9,
+        "english": "Good",
+        "newari": "बांला",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Good.jpg",
+        "audio_path": "/media/general/Recordings/good.m4a"
+    },
+    {
+        "id": 10,
+        "english": "Bad",
+        "newari": "बाम्लगु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/bad.jpg",
+        "audio_path": "/media/general/Recordings/Bad.m4a"
+    },
+    {
+        "id": 11,
+        "english": "Water",
+        "newari": "ल",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/water.jpg",
+        "audio_path": "/media/general/Recordings/Water.m4a"
+    },
+    {
+        "id": 12,
+        "english": "House",
+        "newari": "छें",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/House.jpg",
+        "audio_path": "/media/general/Recordings/House.m4a"
+    },
+    {
+        "id": 13,
+        "english": "Mother",
+        "newari": "मां",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Mother.jpg",
+        "audio_path": "/media/general/Recordings/Mother.m4a"
+    },
+    {
+        "id": 14,
+        "english": "Father",
+        "newari": "बा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Father.jpg",
+        "audio_path": "/media/general/Recordings/Father.m4a"
+    },
+    {
+        "id": 15,
+        "english": "Brother",
+        "newari": "दाजु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Brother.jpg",
+        "audio_path": "/media/general/Recordings/Brother.m4a"
+    },
+    {
+        "id": 16,
+        "english": "Sister",
+        "newari": "तता",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sister.jpg",
+        "audio_path": "/media/general/Recordings/Sister.m4a"
+    },
+    {
+        "id": 17,
+        "english": "Friend",
+        "newari": "पासा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Friend.jpg",
+        "audio_path": "/media/general/Recordings/Friend.m4a"
+    },
+    {
+        "id": 18,
+        "english": "Name",
+        "newari": "नां",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Name.jpg",
+        "audio_path": "/media/general/Recordings/Name.m4a"
+    },
+    {
+        "id": 19,
+        "english": "Today",
+        "newari": "थौं",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Today.jpg",
+        "audio_path": "/media/general/Recordings/Today.m4a"
+    },
+    {
+        "id": 20,
+        "english": "Tomorrow",
+        "newari": "कने",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Tomorrow.jpg",
+        "audio_path": "/media/general/Recordings/Tomorrow.m4a"
+    },
+    {
+        "id": 21,
+        "english": "Yesterday",
+        "newari": "म्हिग",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Yesterday.jpg",
+        "audio_path": "/media/general/Recordings/Yesterday.m4a"
+    },
+    {
+        "id": 22,
+        "english": "Sun",
+        "newari": "नेभहा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sun.jpg",
+        "audio_path": "/media/general/Recordings/Sun.m4a"
+    },
+    {
+        "id": 23,
+        "english": "Moon",
+        "newari": "तिमला",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Moon.jpg",
+        "audio_path": "/media/general/Recordings/Moon.m4a"
+    },
+    {
+        "id": 24,
+        "english": "Rain",
+        "newari": "वा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Rain.jpg",
+        "audio_path": "/media/general/Recordings/Rain.m4a"
+    },
+    {
+        "id": 25,
+        "english": "Beautiful",
+        "newari": "बाँलामा मैज्यू",
+        "category": "general",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/general/Recordings/Beautiful.m4a"
+    },
+    {
+        "id": 26,
+        "english": "Big",
+        "newari": "त र्हङु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Big.jpg",
+        "audio_path": "/media/general/Recordings/Big.m4a"
+    },
+    {
+        "id": 27,
+        "english": "Small",
+        "newari": "चिधङु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Small.jpg",
+        "audio_path": "/media/general/Recordings/Small.m4a"
+    },
+    {
+        "id": 28,
+        "english": "Go",
+        "newari": "हुँ",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/GO.jpg",
+        "audio_path": "/media/general/Recordings/Go.m4a"
+    },
+    {
+        "id": 29,
+        "english": "Come",
+        "newari": "वा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Come.jpg",
+        "audio_path": "/media/general/Recordings/Come.m4a"
+    },
+    {
+        "id": 30,
+        "english": "Love",
+        "newari": "मतीना",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Love.jpg",
+        "audio_path": "/media/general/Recordings/Love.m4a"
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "english": "Chair",
+        "newari": "मेच",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Chair.jpg",
+        "audio_path": "/media/household/Recordings/Chair.m4a"
+    },
+    {
+        "id": 2,
+        "english": "Table",
+        "newari": "टेबिल",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/table.jpg",
+        "audio_path": "/media/household/Recordings/Table.m4a"
+    },
+    {
+        "id": 3,
+        "english": "Bed",
+        "newari": "खाता",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Bed.jpg",
+        "audio_path": "/media/household/Recordings/Bed.m4a"
+    },
+    {
+        "id": 4,
+        "english": "Door",
+        "newari": "लुखा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Door.jpg",
+        "audio_path": "/media/household/Recordings/Door.m4a"
+    },
+    {
+        "id": 5,
+        "english": "Window",
+        "newari": "झ्याः",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Window.jpg",
+        "audio_path": "/media/household/Recordings/Window.m4a"
+    },
+    {
+        "id": 6,
+        "english": "Fan",
+        "newari": "पंखा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Fan.jpg",
+        "audio_path": "/media/household/Recordings/Fan.m4a"
+    },
+    {
+        "id": 7,
+        "english": "Lamp",
+        "newari": "मट",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Lamp.jpg",
+        "audio_path": "/media/household/Recordings/Lamp.m4a"
+    },
+    {
+        "id": 8,
+        "english": "Broom",
+        "newari": "च्वाफि",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Broom.jpg",
+        "audio_path": "/media/household/Recordings/Broom.m4a"
+    },
+    {
+        "id": 9,
+        "english": "Pot",
+        "newari": "थल",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Pot.jpg",
+        "audio_path": "/media/household/Recordings/Pot.m4a"
+    },
+    {
+        "id": 10,
+        "english": "Pillow",
+        "newari": "फोंगा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Pillow.jpg",
+        "audio_path": "/media/household/Recordings/Pillow.m4a"
+    },
+    {
+        "id": 11,
+        "english": "Blanket",
+        "newari": "फांगा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Blanket.jpg",
+        "audio_path": "/media/household/Recordings/Blanket.m4a"
+    },
+    {
+        "id": 12,
+        "english": "Mirror",
+        "newari": "न्हे कं",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Mirror.jpg",
+        "audio_path": "/media/household/Recordings/Mirror.m4a"
+    },
+    {
+        "id": 13,
+        "english": "Key",
+        "newari": "ताचा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Key.jpg",
+        "audio_path": "/media/household/Recordings/Key.m4a"
+    },
+    {
+        "id": 14,
+        "english": "Paper",
+        "newari": "भ्व",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Paper.jpg",
+        "audio_path": "/media/household/Recordings/Paper.m4a"
+    },
+    {
+        "id": 15,
+        "english": "Money",
+        "newari": "दां",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Money.jpg",
+        "audio_path": "/media/household/Recordings/Money.m4a"
+    },
+    {
+        "id": 16,
+        "english": "Kitchen",
+        "newari": "भुतू",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Kitchen.jpg",
+        "audio_path": "/media/household/Recordings/Kitchen.m4a"
+    },
+    {
+        "id": 17,
+        "english": "Cloth",
+        "newari": "लं",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Cloth.jpg",
+        "audio_path": "/media/household/Recordings/Cloth.m4a"
+    },
+    {
+        "id": 18,
+        "english": "Umbrella",
+        "newari": "कुसा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Umbrella.jpg",
+        "audio_path": "/media/household/Recordings/Umbrella.m4a"
+    },
+    {
+        "id": 19,
+        "english": "Book",
+        "newari": "सफू",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Book.jpg",
+        "audio_path": "/media/household/Recordings/Book.m4a"
+    },
+    {
+        "id": 20,
+        "english": "Staircase",
+        "newari": "स्वाहाने",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Staircase.jpg",
+        "audio_path": "/media/household/Recordings/Staircase.m4a"
+    }
+]

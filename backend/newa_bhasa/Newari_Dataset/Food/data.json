@@ -1,0 +1,173 @@
+[
+    {
+        "id": 1,
+        "english": "Rice",
+        "newari": "जा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/rice.jpg",
+        "audio_path": "/media/Food/Recordings/Rice.m4a"
+    },
+    {
+        "id": 2,
+        "english": "Beaten rice",
+        "newari": "बजि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/beaten rice.webp",
+        "audio_path": "/media/Food/Recordings/Beaten Rice.m4a"
+    },
+    {
+        "id": 3,
+        "english": "Meat",
+        "newari": "ला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/meat.png",
+        "audio_path": "/media/Food/Recordings/Meat.m4a"
+    },
+    {
+        "id": 4,
+        "english": "Milk",
+        "newari": "दुरू",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/milk.jpg",
+        "audio_path": "/media/Food/Recordings/Milk.m4a"
+    },
+    {
+        "id": 5,
+        "english": "Egg",
+        "newari": "खें",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/Food/Recordings/Egg.m4a"
+    },
+    {
+        "id": 6,
+        "english": "Fish",
+        "newari": "न्या",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/fish.jpg",
+        "audio_path": "/media/Food/Recordings/Fish.m4a"
+    },
+    {
+        "id": 7,
+        "english": "Tea",
+        "newari": "चिया",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/tea.jpg",
+        "audio_path": "/media/Food/Recordings/Tea.m4a"
+    },
+    {
+        "id": 8,
+        "english": "Sweet",
+        "newari": "चाक्कु",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/sweet.avif",
+        "audio_path": "/media/Food/Recordings/sweet.m4a"
+    },
+    {
+        "id": 9,
+        "english": "Spicy",
+        "newari": "पालु",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/spicy.jpg",
+        "audio_path": "/media/Food/Recordings/Spicy.m4a"
+    },
+    {
+        "id": 10,
+        "english": "Salt",
+        "newari": "चि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/salt.webp",
+        "audio_path": "/media/Food/Recordings/Salt.m4a"
+    },
+    {
+        "id": 11,
+        "english": "Oil",
+        "newari": "चिकं",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/Food/Recordings/OIL.m4a"
+    },
+    {
+        "id": 12,
+        "english": "Fruit",
+        "newari": "सिसाबुसा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/fruit.webp",
+        "audio_path": "/media/Food/Recordings/Fruit.m4a"
+    },
+    {
+        "id": 13,
+        "english": "Chatamari",
+        "newari": "चतांमरि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Chatamari.jpg",
+        "audio_path": "/media/Food/Recordings/Chatamari.m4a"
+    },
+    {
+        "id": 14,
+        "english": "Yomari",
+        "newari": "योमरि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/yomari.png",
+        "audio_path": "/media/Food/Recordings/Yomari.m4a"
+    },
+    {
+        "id": 15,
+        "english": "Bara",
+        "newari": "बरा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Bara.webp",
+        "audio_path": "/media/Food/Recordings/Bara.m4a"
+    },
+    {
+        "id": 16,
+        "english": "Wo (lentil pancake)",
+        "newari": "वो",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 17,
+        "english": "Samay Baji",
+        "newari": "सँय् बाजि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/samya-baji-set.png",
+        "audio_path": "/media/Food/Recordings/Samay Baji.m4a"
+    },
+    {
+        "id": 18,
+        "english": "Choila",
+        "newari": "चोइला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Choila.jpg",
+        "audio_path": "/media/Food/Recordings/Choila.m4a"
+    },
+    {
+        "id": 19,
+        "english": "Aila (local wine)",
+        "newari": "अइला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    }
+]
