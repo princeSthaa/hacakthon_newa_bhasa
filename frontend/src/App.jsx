@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import AlertState from "./context/alert/AlertState";
-import ConfirmState from "./context/confirm/ConfirmAlert";
+import ConfirmState from "./context/confirm/ConfirmState";
 import UserState from "./context/user/UserState";
 import Landing from "./pages/Landing";
 import Signup from "./pages/Signup";

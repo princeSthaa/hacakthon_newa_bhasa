@@ -14,7 +14,7 @@ export default function AlertState(props) {
 
         setTimeout(() => {
             setAlert(false);
-        }, 1500);
+        }, 2000);
     }
 
     return (
@@ -26,10 +26,15 @@ export default function AlertState(props) {
             {
                 alert 
                 &&
-                <div className="alert-modal-background" onClick={()=>{setAlert(false)}}>
-                    <div className="alert-modal">
-                        <h1>{alertType}&nbsp;</h1>
-                        <p>{alertMsg}</p>
+                <div className="alert-modal-background z-50 pointer-events-none" onClick={()=>{setAlert(false)}}>
+                    <div className={`alert-modal pointer-events-auto ${alertType === 'Success' ? 'alert-success' : 'alert-failure'}`}>
+                        <div className="alert-icon">
+                           {alertType === 'Success' ? '✓' : '✕'}
+                        </div>
+                        <div className="alert-content">
+                            <h1 className="alert-title">{alertType}</h1>
+                            <p className="alert-message">{alertMsg}</p>
+                        </div>
                     </div>
                 </div>
             }
