@@ -37,7 +37,7 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
       .map((item) => item.newari);
 
     setOptions(shuffledOptions);
-  }, [level, category]);
+  }, [level, category, pictureData]);
 
   const checkAnswer = (selectedNewari) => {
     const currentItem = questions[currentIndex];
@@ -71,70 +71,94 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
 
   // fallback
   if (!questions || questions.length < 5) {
-    return <p>Not enough data for this exercise.</p>;
+    return <p className="text-center font-bold text-gray-500 mt-10">Not enough data for this exercise.</p>;
   }
 
   return (
-    <>
-      <h1>Exercise 3</h1>
+    <div className="exercise-container">
+      <h1 className="exercise-title">Picture Identification</h1>
 
       {/* IMAGE CARDS */}
-      <div className="flex gap-4">
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
         {questions.map((obj, index) => (
           <div
             key={obj.id}
-            className={`border p-2 ${index === currentIndex ? "border-blue-500 border-4" : ""
-              } ${matched.includes(obj.id) ? "bg-green-200" : ""}`}
+            className={`flex flex-col items-center justify-center p-3 sm:p-4 rounded-[20px] border-4 transition-all duration-500 ${
+              matched.includes(obj.id) 
+                ? "border-[#D1C5BB] bg-[#F0EAE7] opacity-60 scale-95" 
+                : index === currentIndex 
+                  ? "border-[#7A0000] bg-[#FDF6EC] shadow-xl transform scale-105 z-10" 
+                  : "border-[#E8D5CC] bg-white opacity-80 scale-95 grayscale-[30%]"
+            }`}
           >
             <img
-              src={`${obj.image_path !== "" ? "http://127.0.0.1:8000/" + obj.image_path : "/defaultimage.png"}`}
-              style={{ height: "140px", width: "140px", objectFit: "cover" }}
+              src={obj.image_path && obj.image_path !== "" ? "http://127.0.0.1:8000/" + obj.image_path : "/defaultimage.png"}
+              className="w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-xl shadow-sm bg-white"
+              alt={obj.english}
             />
-            <p>{obj.english}</p>
-
+            <p className={`mt-4 font-black uppercase tracking-[1.5px] text-[11px] sm:text-xs ${
+              index === currentIndex ? "text-[#7A0000]" : "text-[#1A0A0A]"
+            }`}>
+              {obj.english}
+            </p>
+            
             {/* show newari after correct */}
-            {matched.includes(obj.id) && <p>Answer <strong>{obj.newari}</strong></p>}
+            <div className="mt-2 h-6 flex items-center justify-center">
+              {matched.includes(obj.id) ? (
+                <span className="text-sm font-black text-[#5C4A43] bg-white px-3 py-1 rounded-full shadow-sm border border-[#E8D5CC]">
+                  ✓ {obj.newari}
+                </span>
+              ) : (
+                <span className="text-sm font-bold text-transparent select-none bg-transparent">
+                  _
+                </span>
+              )}
+            </div>
           </div>
         ))}
       </div>
 
-      <br />
-
       {/* OPTIONS */}
-      <div className="flex gap-2 flex-wrap">
-        {options.map((opt, index) => (
-          <button
-            key={index}
-            className="border px-3 py-1"
-            onClick={() => checkAnswer(opt)}
-          >
-            {opt}
-          </button>
-        ))}
+      <div className="mt-10 pt-6 border-t-2 border-dashed border-[#E8D5CC] w-full">
+        <p className="text-center text-xs font-bold uppercase tracking-wider text-[#9A8880] mb-4">
+          Select the correct translation
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          {options.map((opt, index) => (
+            <button
+              key={index}
+              className="exercise-btn hover:-translate-y-1"
+              onClick={() => checkAnswer(opt)}
+            >
+              {opt}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* ✅ Show/Hide Answer Button */}
-      <br />
-      <button
-        className="border px-2 py-1"
-        onClick={() => setAnswerHidden(!answerHidden)}
-      >
-        {answerHidden ? "Show Answer" : "Hide Answer"}
-      </button>
+      <div className="flex w-full mt-10 justify-center">
+        <button
+          className="exercise-action-btn-secondary"
+          onClick={() => setAnswerHidden(!answerHidden)}
+        >
+          {answerHidden ? "Show Answer 👁️" : "Hide Answer 🙈"}
+        </button>
+      </div>
 
       {/* ✅ Answer Display */}
       {!answerHidden && (
-        <div className="mt-4">
+        <div className="exercise-answer-box text-left w-full mt-4">
           <strong>Answers:</strong>
-          <ul className="list-disc ml-5">
+          <ul className="list-disc ml-5 mt-2 text-sm">
             {questions.map((q) => (
               <li key={q.id}>
-                {q.english} → {q.newari}
+                <span className="font-bold">{q.english}</span> → {q.newari}
               </li>
             ))}
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 }
