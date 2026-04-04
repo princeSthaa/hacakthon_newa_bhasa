@@ -12,8 +12,10 @@ export default function ExerciseFive({ level, category, audioData }) {
 
   useEffect(() => {
     const filteredData = audioData.filter(
-      (item) => item.level === Number(level) && item.category === category
-    );
+    (item) =>
+      Number(item.level) === Number(level) &&
+      item.category.toLowerCase() === category.toLowerCase()
+  );
 
     if (filteredData.length === 0) return;
 
@@ -78,7 +80,7 @@ export default function ExerciseFive({ level, category, audioData }) {
             className="border px-3 py-1"
             onClick={() => checkAnswer(opt)}
           >
-            {opt.english}
+            {opt.newari}
           </button>
         ))}
       </div>

@@ -12,8 +12,10 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
 
   useEffect(() => {
     const filteredData = audioData.filter(
-      (item) => item.level === Number(level) && item.category === category
-    );
+    (item) =>
+      Number(item.level) === Number(level) &&
+      item.category.toLowerCase() === category.toLowerCase()
+  );
 
     if (filteredData.length === 0) return;
 
