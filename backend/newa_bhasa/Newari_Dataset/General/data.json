@@ -49,7 +49,7 @@
         "english": "Yes",
         "newari": "ख",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Yes.jpg",
         "audio_path": "/media/general/Recordings/Yes.m4a"
     },
@@ -58,7 +58,7 @@
         "english": "No",
         "newari": "मखु",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/No.jpg",
         "audio_path": "/media/general/Recordings/No.m4a"
     },
@@ -67,7 +67,7 @@
         "english": "Sorry",
         "newari": "छ्यमा",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Sorry.jpg",
         "audio_path": "/media/general/Recordings/Sorry.m4a"
     },
@@ -76,7 +76,7 @@
         "english": "Good",
         "newari": "बांला",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Good.jpg",
         "audio_path": "/media/general/Recordings/good.m4a"
     },
@@ -85,7 +85,7 @@
         "english": "Bad",
         "newari": "बाम्लगु",
         "category": "general",
-        "level": 14,
+        "level": 4,
         "image_path": "/media/general/Images/bad.jpg",
         "audio_path": "/media/general/Recordings/Bad.m4a"
     },
@@ -94,7 +94,7 @@
         "english": "Water",
         "newari": "ल",
         "category": "general",
-        "level": 14,
+        "level": 4,
         "image_path": "/media/general/Images/water.jpg",
         "audio_path": "/media/general/Recordings/Water.m4a"
     },
@@ -103,7 +103,7 @@
         "english": "House",
         "newari": "छें",
         "category": "general",
-        "level": 14,
+        "level": 4,
         "image_path": "/media/general/Images/House.jpg",
         "audio_path": "/media/general/Recordings/House.m4a"
     },
@@ -112,7 +112,7 @@
         "english": "Mother",
         "newari": "मां",
         "category": "general",
-        "level": 14,
+        "level": 4,
         "image_path": "/media/general/Images/Mother.jpg",
         "audio_path": "/media/general/Recordings/Mother.m4a"
     },
@@ -121,7 +121,7 @@
         "english": "Father",
         "newari": "बा",
         "category": "general",
-        "level": 19,
+        "level": 4,
         "image_path": "/media/general/Images/Father.jpg",
         "audio_path": "/media/general/Recordings/Father.m4a"
     },
@@ -166,7 +166,7 @@
         "english": "Today",
         "newari": "थौं",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Today.jpg",
         "audio_path": "/media/general/Recordings/Today.m4a"
     },
@@ -175,7 +175,7 @@
         "english": "Tomorrow",
         "newari": "कने",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Tomorrow.jpg",
         "audio_path": "/media/general/Recordings/Tomorrow.m4a"
     },
@@ -184,7 +184,7 @@
         "english": "Yesterday",
         "newari": "म्हिग",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Yesterday.jpg",
         "audio_path": "/media/general/Recordings/Yesterday.m4a"
     },
@@ -193,7 +193,7 @@
         "english": "Sun",
         "newari": "नेभहा",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Sun.jpg",
         "audio_path": "/media/general/Recordings/Sun.m4a"
     },
@@ -202,7 +202,7 @@
         "english": "Moon",
         "newari": "तिमला",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Moon.jpg",
         "audio_path": "/media/general/Recordings/Moon.m4a"
     },
@@ -211,7 +211,7 @@
         "english": "Rain",
         "newari": "वा",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Rain.jpg",
         "audio_path": "/media/general/Recordings/Rain.m4a"
     },
@@ -220,7 +220,7 @@
         "english": "Beautiful",
         "newari": "बाँलामा मैज्यू",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "",
         "audio_path": "/media/general/Recordings/Beautiful.m4a"
     },
@@ -229,7 +229,7 @@
         "english": "Big",
         "newari": "त र्हङु",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Big.jpg",
         "audio_path": "/media/general/Recordings/Big.m4a"
     },
@@ -238,7 +238,7 @@
         "english": "Small",
         "newari": "चिधङु",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Small.jpg",
         "audio_path": "/media/general/Recordings/Small.m4a"
     },
@@ -247,7 +247,7 @@
         "english": "Go",
         "newari": "हुँ",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/GO.jpg",
         "audio_path": "/media/general/Recordings/Go.m4a"
     },
@@ -256,7 +256,7 @@
         "english": "Come",
         "newari": "वा",
         "category": "general",
-        "level": 9,
+        "level": 4,
         "image_path": "/media/general/Images/Come.jpg",
         "audio_path": "/media/general/Recordings/Come.m4a"
     },

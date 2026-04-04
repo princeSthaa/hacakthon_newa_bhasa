@@ -14,7 +14,7 @@
         "newari": "देवी",
         "category": "jatra",
         "level": 3,
-        "image_path": "",
+        "image_path": "/media/jatra/Images/Goddess.jpg",
         "audio_path": "/media/jatra/Recordings/Goddess.m4a"
     },
     {
@@ -32,8 +32,8 @@
         "newari": "रथ",
         "category": "jatra",
         "level": 3,
-        "image_path": "",
-        "audio_path": ""
+        "image_path": "/media/jatra/Images/Charoit.jpg",
+        "audio_path": "/media/jatra/Recordings/Charoit.m4a"
     },
     {
         "id": 5,
@@ -49,7 +49,7 @@
         "english": "Drum",
         "newari": "बाजं",
         "category": "jatra",
-        "level": 8,
+        "level": 3,
         "image_path": "/media/jatra/Images/Drum.jpg",
         "audio_path": "/media/jatra/Recordings/Drum.m4a"
     },
@@ -58,7 +58,7 @@
         "english": "Dance",
         "newari": "नाच",
         "category": "jatra",
-        "level": 8,
+        "level": 3,
         "image_path": "/media/jatra/Images/Dance.jpg",
         "audio_path": "/media/jatra/Recordings/Dance.m4a"
     },
@@ -67,7 +67,7 @@
         "english": "Mask",
         "newari": "ख्वापा",
         "category": "jatra",
-        "level": 8,
+        "level": 3,
         "image_path": "/media/jatra/Images/Mask.jpg",
         "audio_path": "/media/jatra/Recordings/Mask.m4a"
     },
@@ -76,7 +76,7 @@
         "english": "Flower",
         "newari": "स्वाँ",
         "category": "jatra",
-        "level": 8,
+        "level": 3,
         "image_path": "/media/jatra/Images/Flower.jpg",
         "audio_path": "/media/jatra/Recordings/Flower.m4a"
     },
@@ -85,7 +85,7 @@
         "english": "Prayer",
         "newari": "प्रार्थना",
         "category": "jatra",
-        "level": 13,
+        "level": 3,
         "image_path": "/media/jatra/Images/Prayer.jpg",
         "audio_path": "/media/jatra/Recordings/Prayer.m4a"
     },
@@ -94,7 +94,7 @@
         "english": "Indra Jatra",
         "newari": "येन्या पुर्णिः",
         "category": "jatra",
-        "level": 13,
+        "level": 3,
         "image_path": "/media/jatra/Images/Indra Jatra.jpg",
         "audio_path": "/media/jatra/Recordings/Indra jatra.m4a"
     },
@@ -103,7 +103,7 @@
         "english": "Bisket Jatra",
         "newari": "बिस्का जात्रा",
         "category": "jatra",
-        "level": 13,
+        "level": 3,
         "image_path": "/media/jatra/Images/Bisket Jatra.jpg",
         "audio_path": "/media/jatra/Recordings/Bisket Jatra.m4a"
     },
@@ -112,7 +112,7 @@
         "english": "Party",
         "newari": "भ्वय्",
         "category": "jatra",
-        "level": 13,
+        "level": 3,
         "image_path": "/media/jatra/Images/Party.jpg",
         "audio_path": "/media/jatra/Recordings/Party.m4a"
     },
@@ -121,7 +121,7 @@
         "english": "Golden tap",
         "newari": "लुँ हिति",
         "category": "jatra",
-        "level": 13,
+        "level": 3,
         "image_path": "/media/jatra/Images/Golden tap.jpg",
         "audio_path": "/media/jatra/Recordings/Golden tap.m4a"
     },
@@ -130,7 +130,7 @@
         "english": "New Year",
         "newari": "न्हू दँ",
         "category": "jatra",
-        "level": 18,
+        "level": 3,
         "image_path": "/media/jatra/Images/New Year.jpg",
         "audio_path": "/media/jatra/Recordings/New Year.m4a"
     },
@@ -139,7 +139,7 @@
         "english": "God",
         "newari": "द्यः",
         "category": "jatra",
-        "level": 18,
+        "level": 3,
         "image_path": "/media/jatra/Images/god.jpg",
         "audio_path": "/media/jatra/Recordings/God.m4a"
     },
@@ -148,8 +148,8 @@
         "english": "Rato Machhindranath",
         "newari": "बुंग द्यः",
         "category": "jatra",
-        "level": 18,
-        "image_path": "",
-        "audio_path": ""
+        "level": 3,
+        "image_path": "/media/jatra/Images/Rato Machhindranath.jpg",
+        "audio_path": "/media/jatra/Recordings/Rato Machhindranath.m4a"
     }
 ]

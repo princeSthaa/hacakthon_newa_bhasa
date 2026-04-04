@@ -49,7 +49,7 @@
         "english": "Fan",
         "newari": "पंखा",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Fan.jpg",
         "audio_path": "/media/household/Recordings/Fan.m4a"
     },
@@ -58,7 +58,7 @@
         "english": "Lamp",
         "newari": "मट",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Lamp.jpg",
         "audio_path": "/media/household/Recordings/Lamp.m4a"
     },
@@ -67,7 +67,7 @@
         "english": "Broom",
         "newari": "च्वाफि",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Broom.jpg",
         "audio_path": "/media/household/Recordings/Broom.m4a"
     },
@@ -76,7 +76,7 @@
         "english": "Pot",
         "newari": "थल",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Pot.jpg",
         "audio_path": "/media/household/Recordings/Pot.m4a"
     },
@@ -85,7 +85,7 @@
         "english": "Pillow",
         "newari": "फोंगा",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Pillow.jpg",
         "audio_path": "/media/household/Recordings/Pillow.m4a"
     },
@@ -94,7 +94,7 @@
         "english": "Blanket",
         "newari": "फांगा",
         "category": "household",
-        "level": 10,
+        "level": 5,
         "image_path": "/media/household/Images/Blanket.jpg",
         "audio_path": "/media/household/Recordings/Blanket.m4a"
     },
@@ -103,7 +103,7 @@
         "english": "Mirror",
         "newari": "न्हे कं",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Mirror.jpg",
         "audio_path": "/media/household/Recordings/Mirror.m4a"
     },
@@ -112,7 +112,7 @@
         "english": "Key",
         "newari": "ताचा",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Key.jpg",
         "audio_path": "/media/household/Recordings/Key.m4a"
     },
@@ -121,7 +121,7 @@
         "english": "Paper",
         "newari": "भ्व",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Paper.jpg",
         "audio_path": "/media/household/Recordings/Paper.m4a"
     },
@@ -130,7 +130,7 @@
         "english": "Money",
         "newari": "दां",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Money.jpg",
         "audio_path": "/media/household/Recordings/Money.m4a"
     },
@@ -139,7 +139,7 @@
         "english": "Kitchen",
         "newari": "भुतू",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Kitchen.jpg",
         "audio_path": "/media/household/Recordings/Kitchen.m4a"
     },
@@ -148,7 +148,7 @@
         "english": "Cloth",
         "newari": "लं",
         "category": "household",
-        "level": 15,
+        "level": 5,
         "image_path": "/media/household/Images/Cloth.jpg",
         "audio_path": "/media/household/Recordings/Cloth.m4a"
     },
@@ -157,7 +157,7 @@
         "english": "Umbrella",
         "newari": "कुसा",
         "category": "household",
-        "level": 1,
+        "level": 5,
         "image_path": "/media/household/Images/Umbrella.jpg",
         "audio_path": "/media/household/Recordings/Umbrella.m4a"
     },
@@ -166,7 +166,7 @@
         "english": "Book",
         "newari": "सफू",
         "category": "household",
-        "level": 1,
+        "level": 5,
         "image_path": "/media/household/Images/Book.jpg",
         "audio_path": "/media/household/Recordings/Book.m4a"
     },
@@ -175,7 +175,7 @@
         "english": "Staircase",
         "newari": "स्वाहाने",
         "category": "household",
-        "level": 1,
+        "level": 5,
         "image_path": "/media/household/Images/Staircase.jpg",
         "audio_path": "/media/household/Recordings/Staircase.m4a"
     }
