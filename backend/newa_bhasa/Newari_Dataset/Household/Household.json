@@ -1,0 +1,22 @@
+[
+  { "id": "HO001", "english": "Chair", "newari": "मेच", "category": "household_objects" },
+  { "id": "HO002", "english": "Table", "newari": "टेबिल", "category": "household_objects" },
+  { "id": "HO003", "english": "Bed", "newari": "खाता", "category": "household_objects" },
+  { "id": "HO004", "english": "Door", "newari": "लुखा", "category": "household_objects" },
+  { "id": "HO005", "english": "Window", "newari": "झ्याः", "category": "household_objects" },
+  { "id": "HO006", "english": "Fan", "newari": "पंखा", "category": "household_objects" },
+  { "id": "HO007", "english": "Lamp", "newari": "मट", "category": "household_objects" },
+  { "id": "HO008", "english": "Broom", "newari": "च्वाफि", "category": "household_objects" },
+  { "id": "HO009", "english": "Pot", "newari": "थल", "category": "household_objects" },
+  { "id": "HO010", "english": "Pillow", "newari": "फोंगा", "category": "household_objects" },
+  { "id": "HO011", "english": "Blanket", "newari": "फांगा", "category": "household_objects" },
+  { "id": "HO012", "english": "Mirror", "newari": "न्हे कं", "category": "household_objects" },
+  { "id": "HO013", "english": "Key", "newari": "ताचा", "category": "household_objects" },
+  { "id": "HO014", "english": "Paper", "newari": "भ्व", "category": "household_objects" },
+  { "id": "HO015", "english": "Money", "newari": "दां", "category": "household_objects" },
+  { "id": "HO016", "english": "Kitchen", "newari": "भुतू", "category": "household_objects" },
+  { "id": "HO017", "english": "Cloth", "newari": "लं", "category": "household_objects" },
+  { "id": "HO018", "english": "Umbrella", "newari": "कुसा", "category": "household_objects" },
+  { "id": "HO019", "english": "Book", "newari": "सफू", "category": "household_objects" },
+  { "id": "HO020", "english": "Staircase", "newari": "स्वाहाने", "category": "household_objects" }
+]

@@ -1,0 +1,21 @@
+[
+  { "id": "F001", "english": "Rice", "newari": "जा", "category": "food" },
+  { "id": "F002", "english": "Beaten rice", "newari": "बजि", "category": "food" },
+  { "id": "F003", "english": "Meat", "newari": "ला", "category": "food" },
+  { "id": "F004", "english": "Milk", "newari": "दुरू", "category": "food" },
+  { "id": "F005", "english": "Egg", "newari": "खें", "category": "food" },
+  { "id": "F006", "english": "Fish", "newari": "न्या", "category": "food" },
+  { "id": "F007", "english": "Tea", "newari": "चिया", "category": "food" },
+  { "id": "F008", "english": "Sweet", "newari": "चाक्कु", "category": "food" },
+  { "id": "F009", "english": "Spicy", "newari": "पालु", "category": "food" },
+  { "id": "F010", "english": "Salt", "newari": "चि", "category": "food" },
+  { "id": "F011", "english": "Oil", "newari": "चिकं", "category": "food" },
+  { "id": "F012", "english": "Fruit", "newari": "सिसाबुसा", "category": "food" },
+  { "id": "F013", "english": "Chatamari", "newari": "चतांमरि", "category": "food" },
+  { "id": "F014", "english": "Yomari", "newari": "योमरि", "category": "food" },
+  { "id": "F015", "english": "Bara", "newari": "बरा", "category": "food" },
+  { "id": "F016", "english": "Wo (lentil pancake)", "newari": "वो", "category": "food" },
+  { "id": "F017", "english": "Samay Baji", "newari": "सँय् बाजि", "category": "food" },
+  { "id": "F018", "english": "Choila", "newari": "चोइला", "category": "food" },
+  { "id": "F019", "english": "Aila (local wine)", "newari": "अइला", "category": "food" }
+]

@@ -1,0 +1,14 @@
+[
+  { "id": "AN001", "english": "Dog", "newari": "खिचा", "category": "animals" },
+  { "id": "AN002", "english": "Cat", "newari": "भौ चा", "category": "animals" },
+  { "id": "AN003", "english": "Cow", "newari": "सा", "category": "animals" },
+  { "id": "AN004", "english": "Lion", "newari": "सिंग", "category": "animals" },
+  { "id": "AN005", "english": "Goat", "newari": "दुगुचा", "category": "animals" },
+  { "id": "AN006", "english": "Bird", "newari": "चखुंचा", "category": "animals" },
+  { "id": "AN007", "english": "Fish", "newari": "न्या", "category": "animals" },
+  { "id": "AN008", "english": "Monkey", "newari": "माक", "category": "animals" },
+  { "id": "AN009", "english": "Elephant", "newari": "किसि", "category": "animals" },
+  { "id": "AN010", "english": "Rat", "newari": "छुँ", "category": "animals" },
+  { "id": "AN011", "english": "Peacock", "newari": "म्हेखा", "category": "animals" },
+  { "id": "AN012", "english": "Housefly", "newari": "भुजीं", "category": "animals" }
+]

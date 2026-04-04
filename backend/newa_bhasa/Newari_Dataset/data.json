@@ -1,0 +1,884 @@
+[
+    {
+        "id": 1,
+        "english": "Dog",
+        "newari": "खिचा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Dog.jpg",
+        "audio_path": "/media/Animals/Recordings/Dog.m4a"
+    },
+    {
+        "id": 2,
+        "english": "Cat",
+        "newari": "भौ चा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Cat.jpg",
+        "audio_path": "/media/Animals/Recordings/Cat.m4a"
+    },
+    {
+        "id": 3,
+        "english": "Cow",
+        "newari": "सा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Cow.jpg",
+        "audio_path": "/media/Animals/Recordings/Cow.m4a"
+    },
+    {
+        "id": 4,
+        "english": "Lion",
+        "newari": "सिंग",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Lion.jpg",
+        "audio_path": "/media/Animals/Recordings/Lion.m4a"
+    },
+    {
+        "id": 5,
+        "english": "Goat",
+        "newari": "दुगुचा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Goat.jpg",
+        "audio_path": "/media/Animals/Recordings/Goat.m4a"
+    },
+    {
+        "id": 6,
+        "english": "Bird",
+        "newari": "चखुंचा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Bird.jpg",
+        "audio_path": "/media/Animals/Recordings/Bird.m4a"
+    },
+    {
+        "id": 7,
+        "english": "Fish",
+        "newari": "न्या",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Fish.jpg",
+        "audio_path": "/media/Animals/Recordings/Fish.m4a"
+    },
+    {
+        "id": 8,
+        "english": "Monkey",
+        "newari": "माक",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Monkey.jpg",
+        "audio_path": "/media/Animals/Recordings/Monkey.m4a"
+    },
+    {
+        "id": 9,
+        "english": "Elephant",
+        "newari": "किसि",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Elephant.jpg",
+        "audio_path": "/media/Animals/Recordings/Elephant.m4a"
+    },
+    {
+        "id": 10,
+        "english": "Rat",
+        "newari": "छुँ",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Rat.jpg",
+        "audio_path": "/media/Animals/Recordings/Rat.m4a"
+    },
+    {
+        "id": 11,
+        "english": "Peacock",
+        "newari": "म्हेखा",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Peacock.jpg",
+        "audio_path": "/media/Animals/Recordings/Peacock.m4a"
+    },
+    {
+        "id": 12,
+        "english": "Housefly",
+        "newari": "भुजीं",
+        "category": "Animals",
+        "level": 1,
+        "image_path": "/media/Animals/Images/Housefly.jpg",
+        "audio_path": "/media/Animals/Recordings/Housefly.m4a"
+    },
+    {
+        "id": 13,
+        "english": "Rice",
+        "newari": "जा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/rice.jpg",
+        "audio_path": "/media/Food/Recordings/Rice.m4a"
+    },
+    {
+        "id": 14,
+        "english": "Beaten rice",
+        "newari": "बजि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/beaten rice.webp",
+        "audio_path": "/media/Food/Recordings/Beaten Rice.m4a"
+    },
+    {
+        "id": 15,
+        "english": "Meat",
+        "newari": "ला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/meat.png",
+        "audio_path": "/media/Food/Recordings/Meat.m4a"
+    },
+    {
+        "id": 16,
+        "english": "Milk",
+        "newari": "दुरू",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/milk.jpg",
+        "audio_path": "/media/Food/Recordings/Milk.m4a"
+    },
+    {
+        "id": 17,
+        "english": "Egg",
+        "newari": "खें",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/Food/Recordings/Egg.m4a"
+    },
+    {
+        "id": 18,
+        "english": "Fish",
+        "newari": "न्या",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/fish.jpg",
+        "audio_path": "/media/Food/Recordings/Fish.m4a"
+    },
+    {
+        "id": 19,
+        "english": "Tea",
+        "newari": "चिया",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/tea.jpg",
+        "audio_path": "/media/Food/Recordings/Tea.m4a"
+    },
+    {
+        "id": 20,
+        "english": "Sweet",
+        "newari": "चाक्कु",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/sweet.avif",
+        "audio_path": "/media/Food/Recordings/sweet.m4a"
+    },
+    {
+        "id": 21,
+        "english": "Spicy",
+        "newari": "पालु",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/spicy.jpg",
+        "audio_path": "/media/Food/Recordings/Spicy.m4a"
+    },
+    {
+        "id": 22,
+        "english": "Salt",
+        "newari": "चि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/salt.webp",
+        "audio_path": "/media/Food/Recordings/Salt.m4a"
+    },
+    {
+        "id": 23,
+        "english": "Oil",
+        "newari": "चिकं",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/Food/Recordings/OIL.m4a"
+    },
+    {
+        "id": 24,
+        "english": "Fruit",
+        "newari": "सिसाबुसा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/fruit.webp",
+        "audio_path": "/media/Food/Recordings/Fruit.m4a"
+    },
+    {
+        "id": 25,
+        "english": "Chatamari",
+        "newari": "चतांमरि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Chatamari.jpg",
+        "audio_path": "/media/Food/Recordings/Chatamari.m4a"
+    },
+    {
+        "id": 26,
+        "english": "Yomari",
+        "newari": "योमरि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/yomari.png",
+        "audio_path": "/media/Food/Recordings/Yomari.m4a"
+    },
+    {
+        "id": 27,
+        "english": "Bara",
+        "newari": "बरा",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Bara.webp",
+        "audio_path": "/media/Food/Recordings/Bara.m4a"
+    },
+    {
+        "id": 28,
+        "english": "Wo (lentil pancake)",
+        "newari": "वो",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 29,
+        "english": "Samay Baji",
+        "newari": "सँय् बाजि",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/Food/Recordings/Samay Baji.m4a"
+    },
+    {
+        "id": 30,
+        "english": "Choila",
+        "newari": "चोइला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "/media/Food/Images/Choila.jpg",
+        "audio_path": "/media/Food/Recordings/Choila.m4a"
+    },
+    {
+        "id": 31,
+        "english": "Aila (local wine)",
+        "newari": "अइला",
+        "category": "Food",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 32,
+        "english": "Hello",
+        "newari": "ज्वजलपा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/hello.jpg",
+        "audio_path": "/media/general/Recordings/Hello.m4a"
+    },
+    {
+        "id": 33,
+        "english": "Thank you",
+        "newari": "सुभाय्",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Thank you.jpg",
+        "audio_path": "/media/general/Recordings/Thank you.m4a"
+    },
+    {
+        "id": 34,
+        "english": "Welcome",
+        "newari": "लशकुश",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Welcome.jpg",
+        "audio_path": "/media/general/Recordings/Welcome.m4a"
+    },
+    {
+        "id": 35,
+        "english": "How are you?",
+        "newari": "म्हं फु ला?",
+        "category": "general",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 36,
+        "english": "I am fine",
+        "newari": "जि त ठिक जु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/I am Fine.jpg",
+        "audio_path": "/media/general/Recordings/I am fine.m4a"
+    },
+    {
+        "id": 37,
+        "english": "Yes",
+        "newari": "ख",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Yes.jpg",
+        "audio_path": "/media/general/Recordings/Yes.m4a"
+    },
+    {
+        "id": 38,
+        "english": "No",
+        "newari": "मखु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/No.jpg",
+        "audio_path": "/media/general/Recordings/No.m4a"
+    },
+    {
+        "id": 39,
+        "english": "Sorry",
+        "newari": "छ्यमा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sorry.jpg",
+        "audio_path": "/media/general/Recordings/Sorry.m4a"
+    },
+    {
+        "id": 40,
+        "english": "Good",
+        "newari": "बांला",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Good.jpg",
+        "audio_path": "/media/general/Recordings/good.m4a"
+    },
+    {
+        "id": 41,
+        "english": "Bad",
+        "newari": "बाम्लगु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/bad.jpg",
+        "audio_path": "/media/general/Recordings/Bad.m4a"
+    },
+    {
+        "id": 42,
+        "english": "Water",
+        "newari": "ल",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/water.jpg",
+        "audio_path": "/media/general/Recordings/Water.m4a"
+    },
+    {
+        "id": 43,
+        "english": "House",
+        "newari": "छें",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/House.jpg",
+        "audio_path": "/media/general/Recordings/House.m4a"
+    },
+    {
+        "id": 44,
+        "english": "Mother",
+        "newari": "मां",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Mother.jpg",
+        "audio_path": "/media/general/Recordings/Mother.m4a"
+    },
+    {
+        "id": 45,
+        "english": "Father",
+        "newari": "बा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Father.jpg",
+        "audio_path": "/media/general/Recordings/Father.m4a"
+    },
+    {
+        "id": 46,
+        "english": "Brother",
+        "newari": "दाजु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Brother.jpg",
+        "audio_path": "/media/general/Recordings/Brother.m4a"
+    },
+    {
+        "id": 47,
+        "english": "Sister",
+        "newari": "तता",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sister.jpg",
+        "audio_path": "/media/general/Recordings/Sister.m4a"
+    },
+    {
+        "id": 48,
+        "english": "Friend",
+        "newari": "पासा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Friend.jpg",
+        "audio_path": "/media/general/Recordings/Friend.m4a"
+    },
+    {
+        "id": 49,
+        "english": "Name",
+        "newari": "नां",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Name.jpg",
+        "audio_path": "/media/general/Recordings/Name.m4a"
+    },
+    {
+        "id": 50,
+        "english": "Today",
+        "newari": "थौं",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Today.jpg",
+        "audio_path": "/media/general/Recordings/Today.m4a"
+    },
+    {
+        "id": 51,
+        "english": "Tomorrow",
+        "newari": "कने",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Tomorrow.jpg",
+        "audio_path": "/media/general/Recordings/Tomorrow.m4a"
+    },
+    {
+        "id": 52,
+        "english": "Yesterday",
+        "newari": "म्हिग",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Yesterday.jpg",
+        "audio_path": "/media/general/Recordings/Yesterday.m4a"
+    },
+    {
+        "id": 53,
+        "english": "Sun",
+        "newari": "नेभहा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Sun.jpg",
+        "audio_path": "/media/general/Recordings/Sun.m4a"
+    },
+    {
+        "id": 54,
+        "english": "Moon",
+        "newari": "तिमला",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Moon.jpg",
+        "audio_path": "/media/general/Recordings/Moon.m4a"
+    },
+    {
+        "id": 55,
+        "english": "Rain",
+        "newari": "वा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Rain.jpg",
+        "audio_path": "/media/general/Recordings/Rain.m4a"
+    },
+    {
+        "id": 56,
+        "english": "Beautiful",
+        "newari": "बाँलामा मैज्यू",
+        "category": "general",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/general/Recordings/Beautiful.m4a"
+    },
+    {
+        "id": 57,
+        "english": "Big",
+        "newari": "त र्हङु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Big.jpg",
+        "audio_path": "/media/general/Recordings/Big.m4a"
+    },
+    {
+        "id": 58,
+        "english": "Small",
+        "newari": "चिधङु",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Small.jpg",
+        "audio_path": "/media/general/Recordings/Small.m4a"
+    },
+    {
+        "id": 59,
+        "english": "Go",
+        "newari": "हुँ",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/GO.jpg",
+        "audio_path": "/media/general/Recordings/Go.m4a"
+    },
+    {
+        "id": 60,
+        "english": "Come",
+        "newari": "वा",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Come.jpg",
+        "audio_path": "/media/general/Recordings/Come.m4a"
+    },
+    {
+        "id": 61,
+        "english": "Love",
+        "newari": "मतीना",
+        "category": "general",
+        "level": 1,
+        "image_path": "/media/general/Images/Love.jpg",
+        "audio_path": "/media/general/Recordings/Love.m4a"
+    },
+    {
+        "id": 62,
+        "english": "Chair",
+        "newari": "मेच",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Chair.jpg",
+        "audio_path": "/media/household/Recordings/Chair.m4a"
+    },
+    {
+        "id": 63,
+        "english": "Table",
+        "newari": "टेबिल",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/table.jpg",
+        "audio_path": "/media/household/Recordings/Table.m4a"
+    },
+    {
+        "id": 64,
+        "english": "Bed",
+        "newari": "खाता",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Bed.jpg",
+        "audio_path": "/media/household/Recordings/Bed.m4a"
+    },
+    {
+        "id": 65,
+        "english": "Door",
+        "newari": "लुखा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Door.jpg",
+        "audio_path": "/media/household/Recordings/Door.m4a"
+    },
+    {
+        "id": 66,
+        "english": "Window",
+        "newari": "झ्याः",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Window.jpg",
+        "audio_path": "/media/household/Recordings/Window.m4a"
+    },
+    {
+        "id": 67,
+        "english": "Fan",
+        "newari": "पंखा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Fan.jpg",
+        "audio_path": "/media/household/Recordings/Fan.m4a"
+    },
+    {
+        "id": 68,
+        "english": "Lamp",
+        "newari": "मट",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Lamp.jpg",
+        "audio_path": "/media/household/Recordings/Lamp.m4a"
+    },
+    {
+        "id": 69,
+        "english": "Broom",
+        "newari": "च्वाफि",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Broom.jpg",
+        "audio_path": "/media/household/Recordings/Broom.m4a"
+    },
+    {
+        "id": 70,
+        "english": "Pot",
+        "newari": "थल",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Pot.jpg",
+        "audio_path": "/media/household/Recordings/Pot.m4a"
+    },
+    {
+        "id": 71,
+        "english": "Pillow",
+        "newari": "फोंगा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Pillow.jpg",
+        "audio_path": "/media/household/Recordings/Pillow.m4a"
+    },
+    {
+        "id": 72,
+        "english": "Blanket",
+        "newari": "फांगा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Blanket.jpg",
+        "audio_path": "/media/household/Recordings/Blanket.m4a"
+    },
+    {
+        "id": 73,
+        "english": "Mirror",
+        "newari": "न्हे कं",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Mirror.jpg",
+        "audio_path": "/media/household/Recordings/Mirror.m4a"
+    },
+    {
+        "id": 74,
+        "english": "Key",
+        "newari": "ताचा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Key.jpg",
+        "audio_path": "/media/household/Recordings/Key.m4a"
+    },
+    {
+        "id": 75,
+        "english": "Paper",
+        "newari": "भ्व",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Paper.jpg",
+        "audio_path": "/media/household/Recordings/Paper.m4a"
+    },
+    {
+        "id": 76,
+        "english": "Money",
+        "newari": "दां",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Money.jpg",
+        "audio_path": "/media/household/Recordings/Money.m4a"
+    },
+    {
+        "id": 77,
+        "english": "Kitchen",
+        "newari": "भुतू",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Kitchen.jpg",
+        "audio_path": "/media/household/Recordings/Kitchen.m4a"
+    },
+    {
+        "id": 78,
+        "english": "Cloth",
+        "newari": "लं",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Cloth.jpg",
+        "audio_path": "/media/household/Recordings/Cloth.m4a"
+    },
+    {
+        "id": 79,
+        "english": "Umbrella",
+        "newari": "कुसा",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Umbrella.jpg",
+        "audio_path": "/media/household/Recordings/Umbrella.m4a"
+    },
+    {
+        "id": 80,
+        "english": "Book",
+        "newari": "सफू",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Book.jpg",
+        "audio_path": "/media/household/Recordings/Book.m4a"
+    },
+    {
+        "id": 81,
+        "english": "Staircase",
+        "newari": "स्वाहाने",
+        "category": "household",
+        "level": 1,
+        "image_path": "/media/household/Images/Staircase.jpg",
+        "audio_path": "/media/household/Recordings/Staircase.m4a"
+    },
+    {
+        "id": 82,
+        "english": "Festival",
+        "newari": "नख",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Festival.jpg",
+        "audio_path": "/media/jatra/Recordings/Festival.m4a"
+    },
+    {
+        "id": 83,
+        "english": "Goddess",
+        "newari": "देवी",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "",
+        "audio_path": "/media/jatra/Recordings/Goddess.m4a"
+    },
+    {
+        "id": 84,
+        "english": "Temple",
+        "newari": "देगः",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Temple.jpg",
+        "audio_path": "/media/jatra/Recordings/Temple.m4a"
+    },
+    {
+        "id": 85,
+        "english": "Chariot",
+        "newari": "रथ",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    },
+    {
+        "id": 86,
+        "english": "Worship",
+        "newari": "पूजा",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Worship.jpg",
+        "audio_path": "/media/jatra/Recordings/Worship.m4a"
+    },
+    {
+        "id": 87,
+        "english": "Drum",
+        "newari": "बाजं",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Drum.jpg",
+        "audio_path": "/media/jatra/Recordings/Drum.m4a"
+    },
+    {
+        "id": 88,
+        "english": "Dance",
+        "newari": "नाच",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Dance.jpg",
+        "audio_path": "/media/jatra/Recordings/Dance.m4a"
+    },
+    {
+        "id": 89,
+        "english": "Mask",
+        "newari": "ख्वापा",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Mask.jpg",
+        "audio_path": "/media/jatra/Recordings/Mask.m4a"
+    },
+    {
+        "id": 90,
+        "english": "Flower",
+        "newari": "स्वाँ",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Flower.jpg",
+        "audio_path": "/media/jatra/Recordings/Flower.m4a"
+    },
+    {
+        "id": 91,
+        "english": "Prayer",
+        "newari": "प्रार्थना",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Prayer.jpg",
+        "audio_path": "/media/jatra/Recordings/Prayer.m4a"
+    },
+    {
+        "id": 92,
+        "english": "Indra Jatra",
+        "newari": "येन्या पुर्णिः",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Indra Jatra.jpg",
+        "audio_path": "/media/jatra/Recordings/Indra jatra.m4a"
+    },
+    {
+        "id": 93,
+        "english": "Bisket Jatra",
+        "newari": "बिस्का जात्रा",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Bisket Jatra.jpg",
+        "audio_path": "/media/jatra/Recordings/Bisket Jatra.m4a"
+    },
+    {
+        "id": 94,
+        "english": "Party",
+        "newari": "भ्वय्",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Party.jpg",
+        "audio_path": "/media/jatra/Recordings/Party.m4a"
+    },
+    {
+        "id": 95,
+        "english": "Golden tap",
+        "newari": "लुँ हिति",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/Golden tap.jpg",
+        "audio_path": "/media/jatra/Recordings/Golden tap.m4a"
+    },
+    {
+        "id": 96,
+        "english": "New Year",
+        "newari": "न्हू दँ",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/New Year.jpg",
+        "audio_path": "/media/jatra/Recordings/New Year.m4a"
+    },
+    {
+        "id": 97,
+        "english": "God",
+        "newari": "द्यः",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "/media/jatra/Images/god.jpg",
+        "audio_path": "/media/jatra/Recordings/God.m4a"
+    },
+    {
+        "id": 98,
+        "english": "Rato Machhindranath",
+        "newari": "बुंग द्यः",
+        "category": "jatra",
+        "level": 1,
+        "image_path": "",
+        "audio_path": ""
+    }
+]
