@@ -15,11 +15,6 @@ function Login() {
                 <div className="blob blob-top"></div>
                 <div className="blob blob-bottom"></div>
 
-                <div className="logo">
-                    <span>न</span>
-                    Nepal Bhasa
-                </div>
-
                 <div>
                     <div className="hero-title">
                         न
