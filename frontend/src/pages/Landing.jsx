@@ -104,9 +104,8 @@ function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 select-none">
-          <span className="text-2xl">न</span>
           <span className="font-extrabold text-xl text-[#7A0000] tracking-tight">
-            Nepal Bhasa
+            न Nepal Bhasa
           </span>
         </Link>
 
@@ -358,8 +357,7 @@ function Footer() {
     <footer className="bg-[#1A0A0A] text-white py-10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <span className="text-2xl">न</span>
-          <span className="font-extrabold text-[#C9A84C]">Nepal Bhasa</span>
+          <span className="font-extrabold text-[#C9A84C]">न Nepal Bhasa</span>
         </div>
         <p className="text-white/40 text-sm text-center">
           © {new Date().getFullYear()} Nepal Bhasa App · Preserving Newari for

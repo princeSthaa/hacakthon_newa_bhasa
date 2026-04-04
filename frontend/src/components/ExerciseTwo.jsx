@@ -87,74 +87,70 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
   }
 
   return (
-    <>
-      <h1>Match the Following</h1>
+    <div className="exercise-container">
+      <h1 className="exercise-title">Vocabulary Match</h1>
 
-      <div className="flex gap-20">
+      <div className="flex w-full justify-between gap-4 mt-4">
         {/* LEFT */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 w-1/2">
           {newariList.map((item) => (
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
-                } ${selectedNewari?.id === item.id ? "bg-blue-200 border-2" : ""
-                }`}
+              className={`exercise-btn relative ${isMatched(item.id) ? "opacity-50 !bg-[#E8D5CC] !border-[#D1C5BB]" : ""} ${selectedNewari?.id === item.id ? "!border-[#7A0000] !bg-[#FDF6EC]" : ""}`}
               onClick={() => setSelectedNewari(item)}
             >
               {item.newari}
               {getPairNumber(item.id) && (
-                <sup className="ml-1 text-xs">
+                <span className="absolute top-1 right-2 text-xs font-black text-[#7A0000] bg-white rounded-full w-5 h-5 flex items-center justify-center border border-[#7A0000]">
                   {getPairNumber(item.id)}
-                </sup>
+                </span>
               )}
             </button>
           ))}
         </div>
 
         {/* RIGHT */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-3 w-1/2">
           {englishList.map((item) => (
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
-                }`}
+              className={`exercise-btn relative ${isMatched(item.id) ? "opacity-50 !bg-[#E8D5CC] !border-[#D1C5BB]" : ""}`}
               onClick={() => handleMatch(item)}
             >
               {item.english}
               {getPairNumber(item.id) && (
-                <sup className="ml-1 text-xs">
+                <span className="absolute top-1 right-2 text-xs font-black text-[#7A0000] bg-white rounded-full w-5 h-5 flex items-center justify-center border border-[#7A0000]">
                   {getPairNumber(item.id)}
-                </sup>
+                </span>
               )}
             </button>
           ))}
         </div>
       </div>
 
-      {/* ✅ Show/Hide Answer Button */}
-      <br />
-      <button
-        className="border px-2 py-1"
-        onClick={() => setAnswerHidden(!answerHidden)}
-      >
-        {answerHidden ? "Show Answer" : "Hide Answer"}
-      </button>
+      <div className="flex w-full mt-6 justify-center">
+        <button
+          className="exercise-action-btn-secondary"
+          onClick={() => setAnswerHidden(!answerHidden)}
+        >
+          {answerHidden ? "Show Answer 👁️" : "Hide Answer 🙈"}
+        </button>
+      </div>
 
-      {/* ✅ Answer Display */}
       {!answerHidden && (
-        <div className="mt-4">
+        <div className="exercise-answer-box text-left w-full">
           <strong>Answers:</strong>
-          <ul className="list-disc ml-5">
+          <ul className="list-disc ml-5 mt-2 text-sm">
             {questions.map((q) => (
               <li key={q.id}>
-                {q.newari} → {q.english}
+                <span className="font-bold">{q.newari}</span> → {q.english}
               </li>
             ))}
           </ul>
         </div>
       )}
-    </>
+    </div>
   );
 }

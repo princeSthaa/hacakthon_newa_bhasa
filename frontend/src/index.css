@@ -58,3 +58,230 @@ button {
 .exercise-answer-box {
     @apply w-full mt-4 bg-green-50 border-2 border-green-200 text-green-800 rounded-xl p-4 font-bold text-center;
 }
+
+/* ─── THEME ─────────────────────────────────────────── */
+:root {
+  --primary: #7A0000;
+  --primary-dark: #3D0000;
+  --primary-hover: #9B0000;
+  --accent: #C9A84C;
+  --bg: #FDF6EC;
+  --border: #E8D5CC;
+  --text: #1A0A0A;
+}
+
+/* ─── MAIN LAYOUT ───────────────────────────────────── */
+.login-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/* ─── LEFT PANEL ────────────────────────────────────── */
+.login-left {
+  width: 42%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 48px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .login-left {
+    display: flex;
+  }
+}
+
+/* decorative blobs */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  filter: blur(40px);
+}
+
+.blob-top {
+  width: 280px;
+  height: 280px;
+  top: -80px;
+  left: -80px;
+}
+
+.blob-bottom {
+  width: 220px;
+  height: 220px;
+  bottom: 40px;
+  right: 0;
+}
+
+/* logo */
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo span:first-child {
+  font-size: 28px;
+}
+
+/* hero text */
+.hero-title {
+  color: var(--accent);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-sub {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.hero-heading {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.hero-desc {
+  opacity: 0.6;
+  margin-top: 10px;
+  max-width: 280px;
+}
+
+/* features */
+.feature-list {
+  margin-top: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* quote */
+.quote {
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+/* ─── RIGHT PANEL ───────────────────────────────────── */
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* form card */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* mobile logo */
+.mobile-logo {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+
+/* headings */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* inputs */
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  margin-bottom: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(122, 0, 0, 0.15);
+  background: white;
+}
+
+/* button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: gray;
+}
+
+.footer a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
