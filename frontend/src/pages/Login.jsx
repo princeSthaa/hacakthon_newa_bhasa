@@ -1,27 +1,14 @@
-import { useState } from "react";
-import axios from "axios";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import UserContext from "../context/user/UserContext";
 
 function Login() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    const handleLogin = async () => {
-        try {
-            const res = await axios.post("http://127.0.0.1:8000/users/login/", {
-                email,
-                password,
-            });
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-            localStorage.setItem("user", JSON.stringify(res.data.user));
-            navigate("/dashboard");
-
-        } catch (err) {
-            alert("Invalid credentials");
-        }
-    };
-
+    const { handleLogin } = useContext(UserContext);
     return (
         <div>
             <h2>Login</h2>
@@ -29,7 +16,7 @@ function Login() {
             <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
             <input placeholder="Password" type="password" onChange={(e) => setPassword(e.target.value)} />
 
-            <button onClick={handleLogin}>Login</button>
+            <button onClick={() => { handleLogin(email, password) }}>Login</button>
 
             <p onClick={() => navigate("/signup")}>Go to Signup</p>
         </div>

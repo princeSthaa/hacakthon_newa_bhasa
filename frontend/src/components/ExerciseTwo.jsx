@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
 export default function ExerciseTwo({ level, category, setExercise }) {
-  
+
   const textData = [
     { id: 1, newari: "ja", english: "rice", category: "food", level: 1 },
     { id: 2, newari: "ke", english: "lentil", category: "food", level: 1 },
@@ -15,14 +15,14 @@ export default function ExerciseTwo({ level, category, setExercise }) {
     { id: 9, newari: "thwon", english: "alcohol", category: "food", level: 1 },
     { id: 10, newari: "lakhamari", english: "sweet", category: "food", level: 1 },
   ];
-  
+
   const [questions, setQuestions] = useState([]);
   const [newariList, setNewariList] = useState([]);
-  const [englishList, setEnglishList] = useState([]);  
+  const [englishList, setEnglishList] = useState([]);
   const [selectedNewari, setSelectedNewari] = useState(null);
   const [matches, setMatches] = useState([]); // matches: [{ newariId, englishId, pairNumber }]
 
-  const { showAlert } = useContext(AlertContext);  
+  const { showAlert } = useContext(AlertContext);
 
   useEffect(() => {
     const filtered = textData.filter(
@@ -91,11 +91,9 @@ export default function ExerciseTwo({ level, category, setExercise }) {
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${
-                isMatched(item.id) ? "bg-green-300" : ""
-              } ${
-                selectedNewari?.id === item.id ? "bg-blue-200 border-2" : ""
-              }`}
+              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
+                } ${selectedNewari?.id === item.id ? "bg-blue-200 border-2" : ""
+                }`}
               onClick={() => setSelectedNewari(item)}
             >
               {item.newari}
@@ -114,9 +112,8 @@ export default function ExerciseTwo({ level, category, setExercise }) {
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${
-                isMatched(item.id) ? "bg-green-300" : ""
-              }`}
+              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
+                }`}
               onClick={() => handleMatch(item)}
             >
               {item.english}

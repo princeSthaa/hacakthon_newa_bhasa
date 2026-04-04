@@ -17,14 +17,14 @@ export default function ConfirmState(props) {
     }
 
     const handleOk = () => {
-        if(answerRef.current!==null){
+        if (answerRef.current !== null) {
             answerRef.current(true);
         }
         setConfirm(false);
     }
 
     const handleCancel = () => {
-        if(answerRef.current!==null){
+        if (answerRef.current !== null) {
             answerRef.current(false);
         }
         setConfirm(false);
@@ -37,12 +37,12 @@ export default function ConfirmState(props) {
             </ConfirmContext.Provider>
 
             {
-                confirm                
+                confirm
                 &&
                 <div className="confirm-modal-background" onClick={handleCancel}>
                     <div className="confirm-modal p-4">
                         <h1><b>{confirmMsg}</b></h1>
-                        <img src="/close.png" style={{height: "14px", width: "14px"}} onClick={handleCancel}/>
+                        <p onClick={handleCancel}>X</p>
                         <div className="flex gap-4">
                             <button className="border p-2" onClick={handleOk}>Yes</button>
                             <button className="border p-2" onClick={handleCancel}>No</button>
@@ -50,6 +50,6 @@ export default function ConfirmState(props) {
                     </div>
                 </div>
             }
-        </> 
+        </>
     );
 }
