@@ -7,29 +7,32 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
   const [newariList, setNewariList] = useState([]);
   const [englishList, setEnglishList] = useState([]);
   const [selectedNewari, setSelectedNewari] = useState(null);
-  const [matches, setMatches] = useState([]); // matches: [{ newariId, englishId, pairNumber }]
+  const [matches, setMatches] = useState([]);
+
+  // ✅ added state
+  const [answerHidden, setAnswerHidden] = useState(true);
 
   const { showAlert } = useContext(AlertContext);
 
   useEffect(() => {
-  if (!textData || textData.length === 0) return;
+    if (!textData || textData.length === 0) return;
 
-  const filtered = textData.filter(
-    (item) =>
-      Number(item.level) === Number(level) &&
-      item.category.toLowerCase() === category.toLowerCase()
-  );
+    const filtered = textData.filter(
+      (item) =>
+        Number(item.level) === Number(level) &&
+        item.category.toLowerCase() === category.toLowerCase()
+    );
 
-  if (filtered.length < 5) return;
+    if (filtered.length < 5) return;
 
-  const selected = [...filtered]
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 5);
+    const selected = [...filtered]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
 
-  setQuestions(selected);
-  setNewariList([...selected].sort(() => 0.5 - Math.random()));
-  setEnglishList([...selected].sort(() => 0.5 - Math.random()));
-}, [level, category, textData]);
+    setQuestions(selected);
+    setNewariList([...selected].sort(() => 0.5 - Math.random()));
+    setEnglishList([...selected].sort(() => 0.5 - Math.random()));
+  }, [level, category, textData]);
 
   const handleMatch = (eng) => {
     if (!selectedNewari) return;
@@ -84,9 +87,11 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
-                } ${selectedNewari?.id === item.id ? "bg-blue-200 border-2" : ""
-                }`}
+              className={`border px-2 py-1 relative ${
+                isMatched(item.id) ? "bg-green-300" : ""
+              } ${
+                selectedNewari?.id === item.id ? "bg-blue-200 border-2" : ""
+              }`}
               onClick={() => setSelectedNewari(item)}
             >
               {item.newari}
@@ -105,8 +110,9 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
             <button
               key={item.id}
               disabled={isMatched(item.id)}
-              className={`border px-2 py-1 relative ${isMatched(item.id) ? "bg-green-300" : ""
-                }`}
+              className={`border px-2 py-1 relative ${
+                isMatched(item.id) ? "bg-green-300" : ""
+              }`}
               onClick={() => handleMatch(item)}
             >
               {item.english}
@@ -119,6 +125,29 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
           ))}
         </div>
       </div>
+
+      {/* ✅ Show/Hide Answer Button */}
+      <br />
+      <button
+        className="border px-2 py-1"
+        onClick={() => setAnswerHidden(!answerHidden)}
+      >
+        {answerHidden ? "Show Answer" : "Hide Answer"}
+      </button>
+
+      {/* ✅ Answer Display */}
+      {!answerHidden && (
+        <div className="mt-4">
+          <strong>Answers:</strong>
+          <ul className="list-disc ml-5">
+            {questions.map((q) => (
+              <li key={q.id}>
+                {q.newari} → {q.english}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }

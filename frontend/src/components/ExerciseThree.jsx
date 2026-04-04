@@ -9,15 +9,18 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
   const [currentIndex, setCurrentIndex] = useState(0);
   const [matched, setMatched] = useState([]);
 
+  // ✅ added state
+  const [answerHidden, setAnswerHidden] = useState(true);
+
   useEffect(() => {
 
     if (!pictureData || pictureData.length === 0) return;
     // 1. filter
     const filtered = pictureData.filter(
-    (item) =>
-      Number(item.level) === Number(level) &&
-      item.category.toLowerCase() === category.toLowerCase()
-  );
+      (item) =>
+        Number(item.level) === Number(level) &&
+        item.category.toLowerCase() === category.toLowerCase()
+    );
 
     if (filtered.length < 5) return;
 
@@ -76,7 +79,7 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
             <img
               src={`${obj.image_path!==""?"http://127.0.0.1:8000/"+obj.image_path:"/defaultimage.png"}`}
               style={{ height: "140px", width: "140px", objectFit: "cover" }}
-              />
+            />
             <p>{obj.english}</p>
 
             {/* show newari after correct */}
@@ -99,6 +102,29 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
           </button>
         ))}
       </div>
+
+      {/* ✅ Show/Hide Answer Button */}
+      <br />
+      <button
+        className="border px-2 py-1"
+        onClick={() => setAnswerHidden(!answerHidden)}
+      >
+        {answerHidden ? "Show Answer" : "Hide Answer"}
+      </button>
+
+      {/* ✅ Answer Display */}
+      {!answerHidden && (
+        <div className="mt-4">
+          <strong>Answers:</strong>
+          <ul className="list-disc ml-5">
+            {questions.map((q) => (
+              <li key={q.id}>
+                {q.english} → {q.newari}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }

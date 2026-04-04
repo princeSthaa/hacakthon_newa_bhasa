@@ -8,14 +8,17 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
   const [options, setOptions] = useState([]);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  // ✅ added state
+  const [answerHidden, setAnswerHidden] = useState(true);
+
   const audioRef = useRef(null);
 
   useEffect(() => {
     const filteredData = audioData.filter(
-    (item) =>
-      Number(item.level) === Number(level) &&
-      item.category.toLowerCase() === category.toLowerCase()
-  );
+      (item) =>
+        Number(item.level) === Number(level) &&
+        item.category.toLowerCase() === category.toLowerCase()
+    );
 
     if (filteredData.length === 0) return;
 
@@ -69,7 +72,10 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
           <button className="border px-3 py-1" onClick={toggleAudio}>
             {isPlaying ? "Stop Audio" : "Play Audio"}
           </button>
-          <img src={`/icons/${isPlaying?"yesaudio.png":"noaudio.png"}`} style={{height: "18px", width: "18px"}}/>
+          <img
+            src={`/icons/${isPlaying ? "yesaudio.png" : "noaudio.png"}`}
+            style={{ height: "18px", width: "18px" }}
+          />
         </div>
       </div>
 
@@ -85,6 +91,22 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
           </button>
         ))}
       </div>
+
+      {/* ✅ Show/Hide Answer Button */}
+      <br />
+      <button
+        className="border px-2 py-1"
+        onClick={() => setAnswerHidden(!answerHidden)}
+      >
+        {answerHidden ? "Show Answer" : "Hide Answer"}
+      </button>
+
+      {/* ✅ Answer Display */}
+      {!answerHidden && (
+        <div className="mt-4">
+          <strong>Answer:</strong> {currentItem.english}
+        </div>
+      )}
     </>
   );
 }

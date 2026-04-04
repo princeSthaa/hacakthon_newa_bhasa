@@ -10,7 +10,6 @@ import Levels from "../components/Levels";
 function Dashboard() {
     let navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem("user"));
-    const [data, setData] = useState([]);
 
     const [contentChoice, setContentChoice] = useState("profile");
 
@@ -26,15 +25,6 @@ function Dashboard() {
             showAlert("Success", "You've signed out. See you next time!");
         }
     }
-
-    useEffect(() => {
-        fetch("http://127.0.0.1:8000/data/api/v0/food/1/json.json")
-            .then((res) => res.json())
-            .then((result) => {
-                setData(result);
-            })
-            .catch((err) => console.error("Error fetching:", err));
-    }, []);
 
     useEffect(() => {
         if (!localStorage.getItem("userLoggedIn")) {
@@ -55,11 +45,14 @@ function Dashboard() {
                     <button className="dash-nav-btn" onClick={() => { setContentChoice("progress") }}>Progress</button>
                     <button className="dash-nav-btn" onClick={() => { setContentChoice("leaderboard") }}>Leader Board</button>
                     <button className="dash-nav-btn" onClick={() => { setContentChoice("levels") }}>Levels</button>
-                    <button className="dash-nav-btn" onClick={() => { handleSignOut() }}>Sign Out</button>
+                    <button className="dash-nav-btn" onClick={() => { handleSignOut() }}>Sign out</button>
                 </div>
             </div>
             <div className="pt-4 pl-72 pr-4">
-                <h3>Welcome, {user?.name}</h3>
+                <div className="flex">
+                    <h3>Welcome, {user?.name}</h3>
+                    <p>&nbsp;| {user?.email}</p>
+                </div>
                 {
                     contentChoice === "profile" &&
                     <Profile />

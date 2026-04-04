@@ -1,21 +1,27 @@
 import { useContext, useState, useEffect, useRef } from "react";
 import AlertContext from "../context/alert/AlertContext";
+import { useNavigate } from "react-router";
 
 export default function ExerciseFive({ level, category, audioData }) {
+  let navigate = useNavigate();
   const { showAlert } = useContext(AlertContext);
 
   const [currentItem, setCurrentItem] = useState(null);
   const [options, setOptions] = useState([]);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [displayLevelComplete, setDisplayLevelComplete] = useState(false);
+
+  // ✅ added state
+  const [answerHidden, setAnswerHidden] = useState(true);
 
   const audioRef = useRef(null);
 
   useEffect(() => {
     const filteredData = audioData.filter(
-    (item) =>
-      Number(item.level) === Number(level) &&
-      item.category.toLowerCase() === category.toLowerCase()
-  );
+      (item) =>
+        Number(item.level) === Number(level) &&
+        item.category.toLowerCase() === category.toLowerCase()
+    );
 
     if (filteredData.length === 0) return;
 
@@ -49,7 +55,7 @@ export default function ExerciseFive({ level, category, audioData }) {
 
   const checkAnswer = (selectedItem) => {
     if (selectedItem.id === currentItem.id) {
-      showAlert("Success", "Correct Answer!");
+      setDisplayLevelComplete(true);
     } else {
       showAlert("Failure", "Incorrect Answer!");
     }
@@ -68,7 +74,10 @@ export default function ExerciseFive({ level, category, audioData }) {
           <button className="border px-3 py-1" onClick={toggleAudio}>
             {isPlaying ? "Stop Audio" : "Play Audio"}
           </button>
-          <img src={`/icons/${isPlaying?"yesaudio.png":"noaudio.png"}`} style={{height: "18px", width: "18px"}}/>
+          <img
+            src={`/icons/${isPlaying ? "yesaudio.png" : "noaudio.png"}`}
+            style={{ height: "18px", width: "18px" }}
+          />
         </div>
       </div>
 
@@ -84,6 +93,32 @@ export default function ExerciseFive({ level, category, audioData }) {
           </button>
         ))}
       </div>
+
+      {/* ✅ Show/Hide Answer Button */}
+      <br />
+      <button
+        className="border px-2 py-1"
+        onClick={() => setAnswerHidden(!answerHidden)}
+      >
+        {answerHidden ? "Show Answer" : "Hide Answer"}
+      </button>
+
+      {/* ✅ Answer Display */}
+      {!answerHidden && (
+        <div className="mt-4">
+          <strong>Answer:</strong> {currentItem.newari}
+        </div>
+      )}
+
+      {
+        displayLevelComplete &&
+        <div className="confirm-modal-background">
+          <div className="confirm-modal">
+            <h1>Yay congratulation you completed level {level}</h1>
+            <button className="border" onClick={()=>{navigate("/dashboard")}}>Go to next Level</button>
+          </div>
+        </div>
+      }
     </>
   );
 }
