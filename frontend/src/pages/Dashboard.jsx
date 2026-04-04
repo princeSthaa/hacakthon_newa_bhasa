@@ -22,6 +22,8 @@ function Dashboard() {
             navigate("/");
             localStorage.removeItem("user");
             localStorage.removeItem("userLoggedIn");
+            localStorage.removeItem("contentChoice");
+            localStorage.removeItem("newari_progress_v1");
             showAlert("Success", "You've signed out. See you next time!");
         }
     }

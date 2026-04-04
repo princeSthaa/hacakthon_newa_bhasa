@@ -162,7 +162,7 @@ export default function ExerciseFive({ level, category, audioData }) {
             </p>
             <div className="flex w-full justify-center">
               <button 
-                className="confirm-btn-primary w-full" 
+                className="confirm-btn confirm-btn-confirm" 
                 onClick={() => { navigate("/dashboard") }}
               >
                 Return to Dashboard
