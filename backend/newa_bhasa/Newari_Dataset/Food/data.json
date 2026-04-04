@@ -40,7 +40,7 @@
         "english": "Egg",
         "newari": "खें",
         "category": "Food",
-        "level": 1,
+        "level": 2,
         "image_path": "",
         "audio_path": "/media/Food/Recordings/Egg.m4a"
     },
@@ -49,7 +49,7 @@
         "english": "Fish",
         "newari": "न्या",
         "category": "Food",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Food/Images/fish.jpg",
         "audio_path": "/media/Food/Recordings/Fish.m4a"
     },
@@ -58,7 +58,7 @@
         "english": "Tea",
         "newari": "चिया",
         "category": "Food",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Food/Images/tea.jpg",
         "audio_path": "/media/Food/Recordings/Tea.m4a"
     },
@@ -67,7 +67,7 @@
         "english": "Sweet",
         "newari": "चाक्कु",
         "category": "Food",
-        "level": 1,
+        "level": 2,
         "image_path": "/media/Food/Images/sweet.avif",
         "audio_path": "/media/Food/Recordings/sweet.m4a"
     },
@@ -76,7 +76,7 @@
         "english": "Spicy",
         "newari": "पालु",
         "category": "Food",
-        "level": 1,
+        "level": 3,
         "image_path": "/media/Food/Images/spicy.jpg",
         "audio_path": "/media/Food/Recordings/Spicy.m4a"
     },
@@ -85,7 +85,7 @@
         "english": "Salt",
         "newari": "चि",
         "category": "Food",
-        "level": 1,
+        "level": 3,
         "image_path": "/media/Food/Images/salt.webp",
         "audio_path": "/media/Food/Recordings/Salt.m4a"
     },
@@ -94,7 +94,7 @@
         "english": "Oil",
         "newari": "चिकं",
         "category": "Food",
-        "level": 1,
+        "level": 3,
         "image_path": "",
         "audio_path": "/media/Food/Recordings/OIL.m4a"
     },
@@ -103,7 +103,7 @@
         "english": "Fruit",
         "newari": "सिसाबुसा",
         "category": "Food",
-        "level": 1,
+        "level": 3,
         "image_path": "/media/Food/Images/fruit.webp",
         "audio_path": "/media/Food/Recordings/Fruit.m4a"
     },
@@ -112,7 +112,7 @@
         "english": "Chatamari",
         "newari": "चतांमरि",
         "category": "Food",
-        "level": 1,
+        "level": 4,
         "image_path": "/media/Food/Images/Chatamari.jpg",
         "audio_path": "/media/Food/Recordings/Chatamari.m4a"
     },
@@ -121,7 +121,7 @@
         "english": "Yomari",
         "newari": "योमरि",
         "category": "Food",
-        "level": 1,
+        "level": 4,
         "image_path": "/media/Food/Images/yomari.png",
         "audio_path": "/media/Food/Recordings/Yomari.m4a"
     },
@@ -130,7 +130,7 @@
         "english": "Bara",
         "newari": "बरा",
         "category": "Food",
-        "level": 1,
+        "level": 4,
         "image_path": "/media/Food/Images/Bara.webp",
         "audio_path": "/media/Food/Recordings/Bara.m4a"
     },
@@ -139,7 +139,7 @@
         "english": "Wo (lentil pancake)",
         "newari": "वो",
         "category": "Food",
-        "level": 1,
+        "level": 4,
         "image_path": "",
         "audio_path": ""
     },
@@ -148,7 +148,7 @@
         "english": "Samay Baji",
         "newari": "सँय् बाजि",
         "category": "Food",
-        "level": 1,
+        "level": 5,
         "image_path": "/media/Food/Images/samya-baji-set.png",
         "audio_path": "/media/Food/Recordings/Samay Baji.m4a"
     },
@@ -157,7 +157,7 @@
         "english": "Choila",
         "newari": "चोइला",
         "category": "Food",
-        "level": 1,
+        "level": 5,
         "image_path": "/media/Food/Images/Choila.jpg",
         "audio_path": "/media/Food/Recordings/Choila.m4a"
     },
@@ -166,8 +166,8 @@
         "english": "Aila (local wine)",
         "newari": "अइला",
         "category": "Food",
-        "level": 1,
-        "image_path": "",
-        "audio_path": ""
+        "level": 5,
+        "image_path": "/media/Food/Images/Aila.jpg",
+        "audio_path": "/media/Food/Recordings/Aila.m4a"
     }
 ]

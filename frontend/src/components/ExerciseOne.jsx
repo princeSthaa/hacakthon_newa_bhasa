@@ -2,52 +2,73 @@ import { useContext, useState, useEffect } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
 export default function ExerciseOne({ level, category, setExercise }) {
-  
-  const textData = [
-    { id: 1, newari: "ja", english: "rice", category: "food", level: 1 },
-    { id: 2, newari: "ke", english: "lentil", category: "food", level: 1 },
-    { id: 3, newari: "pachai", english: "spinach", category: "food", level: 1 },
-    { id: 4, newari: "kani", english: "corn", category: "food", level: 1 },
-    { id: 5, newari: "laa", english: "meat", category: "food", level: 1 },
-    { id: 6, newari: "khee", english: "egg", category: "food", level: 1 },
-    { id: 7, newari: "baji", english: "beaten rice", category: "food", level: 1 },
-    { id: 8, newari: "chya", english: "tea", category: "food", level: 1 },
-    { id: 9, newari: "thwon", english: "alcohol", category: "food", level: 1 },
-    { id: 10, newari: "lakhamari", english: "sweet", category: "food", level: 1 },
-  ];
-
   const { showAlert } = useContext(AlertContext);
+
   const [currentItem, setCurrentItem] = useState(null);
   const [options, setOptions] = useState([]);
   const [answerHidden, setAnswerHidden] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    // Step 1: Filter textData based on level and category props
-    const filteredData = textData.filter(
-      (item) => item.level === Number(level) && item.category === category
-    );
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError("");
 
-    if (filteredData.length === 0) {
-      return; // No data available for this level/category
-    }
+        const response = await fetch(
+          `http://127.0.0.1:8000/data/api/v0/${category}/${level}/text.json`
+        );
 
-    // Step 2: Pick a random item from filtered data
-    const item = filteredData[Math.floor(Math.random() * filteredData.length)];
-    setCurrentItem(item);
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
 
-    // Step 3: Pick 4 other random English words from filtered data
-    const otherOptions = filteredData
-      .filter((i) => i.id !== item.id)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 4)
-      .map((i) => i.english);
+        const data = await response.json();
 
-    // Step 4: Combine correct answer and shuffle
-    const allOptions = [...otherOptions, item.english].sort(() => 0.5 - Math.random());
-    setOptions(allOptions);
+        const filteredData = data.filter(
+          (item) =>
+            Number(item.level) === Number(level) &&
+            item.category.toLowerCase() === category.toLowerCase()
+        );
+
+        if (filteredData.length === 0) {
+          setCurrentItem(null);
+          setOptions([]);
+          setLoading(false);
+          return;
+        }
+
+        const randomItem =
+          filteredData[Math.floor(Math.random() * filteredData.length)];
+
+        setCurrentItem(randomItem);
+
+        const wrongOptions = filteredData
+          .filter((item) => item.id !== randomItem.id)
+          .map((item) => item.english);
+
+        const shuffledWrongOptions = wrongOptions.sort(() => Math.random() - 0.5);
+
+        const finalOptions = [...shuffledWrongOptions.slice(0, 4), randomItem.english].sort(
+          () => Math.random() - 0.5
+        );
+
+        setOptions(finalOptions);
+      } catch (err) {
+        console.error(err);
+        setError("Could not load exercise data.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, [level, category]);
 
   const checkAnswer = (ans) => {
+    if (!currentItem) return;
+
     if (ans === currentItem.english) {
       showAlert("Success", "Correct Answer!");
       setExercise("2");
@@ -56,24 +77,43 @@ export default function ExerciseOne({ level, category, setExercise }) {
     }
   };
 
+  if (loading) return <p>Loading questions...</p>;
+  if (error) return <p>{error}</p>;
   if (!currentItem) return <p>No questions available for this level/category.</p>;
 
   return (
     <>
       <h1>Exercise 1</h1>
-      <p>What does <strong>{currentItem.newari}</strong> mean?</p>
-      <div className="flex gap-2">
+      <p>
+        What does <strong>{currentItem.newari}</strong> mean?
+      </p>
+
+      <div className="flex gap-2 flex-wrap">
         {options.map((opt, index) => (
-          <button key={index} className="border px-2 py-1" onClick={() => checkAnswer(opt)}>
+          <button
+            key={index}
+            className="border px-2 py-1"
+            onClick={() => checkAnswer(opt)}
+          >
             {opt}
           </button>
         ))}
-      </div><br/>
+      </div>
 
-      <button className="border px-2 py-1" onClick={() => setAnswerHidden(!answerHidden)}>
+      <br />
+
+      <button
+        className="border px-2 py-1"
+        onClick={() => setAnswerHidden(!answerHidden)}
+      >
         {answerHidden ? "Show Answer" : "Hide Answer"}
       </button>
-      {!answerHidden && <p><strong>Answer:</strong> {currentItem.english}</p>}
+
+      {!answerHidden && (
+        <p>
+          <strong>Answer:</strong> {currentItem.english}
+        </p>
+      )}
     </>
   );
 }
