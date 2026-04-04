@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import AlertContext from "../context/alert/AlertContext";
 import axios from "axios";
 
 function Signup() {
@@ -8,6 +9,7 @@ function Signup() {
     const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
+    const { showAlert } = useContext(AlertContext);
 
     const handleSignup = async () => {
         try {
@@ -16,12 +18,10 @@ function Signup() {
                 email,
                 password,
             });
-
-            alert("User created");
+            showAlert("Success", "User created");
             navigate("/");
-
         } catch (err) {
-            alert("Error creating user");
+            showAlert("Failure", "Error creating user");
         }
     };
 

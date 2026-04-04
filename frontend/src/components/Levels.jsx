@@ -5,10 +5,11 @@ export default function Levels() {
   const levels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
   const getCategory = (level) => {
-    if (level >= 1 && level <= 5) return "food";
-    if (level >= 6 && level <= 10) return "numbers";
-    if (level >= 11 && level <= 15) return "relations";
-    if (level >= 16 && level <= 20) return "others";
+    if (level===1||level===6||level===11||level===16) return "food";
+    if (level===2||level===7||level===12||level===17) return "animals";
+    if (level===3||level===8||level===13||level===18) return "jatra";
+    if (level===4||level===9||level===14||level===19) return "general";
+    if (level===5||level===10||level===15||level===20) return "household";
   };
 
   return (

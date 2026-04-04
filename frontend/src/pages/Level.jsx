@@ -11,12 +11,29 @@ export default function Level() {
     const { id, category } = useParams();
     const exercises = [1, 2, 3, 4, 5];
     const [exercise, setExercise] = useState("1");
+    const [data, setData] = useState([]);
+    
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `http://127.0.0.1:8000/data/api/v0/${category}/${id}/text.json`
+        );
+
+        const result = await response.json();
+        setData(result);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
     useEffect(() => {
         if (!localStorage.getItem("userLoggedIn")) {
             navigate("/login");
+        } else {
+            fetchData();
         }
         // eslint-disable-next-line
-    }, []);
+    }, [id, category]);
     return (
         <>
             <button className="border" onClick={() => { navigate("/dashboard") }}>Go Back</button>
@@ -34,19 +51,19 @@ export default function Level() {
                 }
                 {
                     exercise === "2" &&
-                    <ExerciseTwo level={id} category={category} setExercise={setExercise} />
+                    <ExerciseTwo level={id} category={category} setExercise={setExercise} textData={data}/>
                 }
                 {
                     exercise === "3" &&
-                    <ExerciseThree level={id} category={category} setExercise={setExercise} />
+                    <ExerciseThree level={id} category={category} setExercise={setExercise} pictureData={data}/>
                 }
                 {
                     exercise === "4" &&
-                    <ExerciseFour level={id} category={category} setExercise={setExercise} />
+                    <ExerciseFour level={id} category={category} setExercise={setExercise} audioData={data}/>
                 }
                 {
                     exercise === "5" &&
-                    <ExerciseFive level={id} category={category} />
+                    <ExerciseFive level={id} category={category} audioData={data}/>
                 }
             </div>
         </>

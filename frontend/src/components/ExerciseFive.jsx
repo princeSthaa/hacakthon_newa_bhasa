@@ -1,21 +1,8 @@
 import { useContext, useState, useEffect, useRef } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
-export default function ExerciseFive({ level, category }) {
+export default function ExerciseFive({ level, category, audioData }) {
   const { showAlert } = useContext(AlertContext);
-
-  const audioData = [
-    { id: 1, voicePath: "/audio/audio.mp3", newari: "ja", category: "food", level: 1 },
-    { id: 2, voicePath: "/audio/audio.mp3", newari: "ke", category: "food", level: 1 },
-    { id: 3, voicePath: "/audio/audio.mp3", newari: "pachai", category: "food", level: 1 },
-    { id: 4, voicePath: "/audio/audio.mp3", newari: "kani", category: "food", level: 1 },
-    { id: 5, voicePath: "/audio/audio.mp3", newari: "laa", category: "food", level: 1 },
-    { id: 6, voicePath: "/audio/audio.mp3", newari: "khee", category: "food", level: 1 },
-    { id: 7, voicePath: "/audio/audio.mp3", newari: "baji", category: "food", level: 1 },
-    { id: 8, voicePath: "/audio/audio.mp3", newari: "chya", category: "food", level: 1 },
-    { id: 9, voicePath: "/audio/audio.mp3", newari: "thwon", category: "food", level: 1 },
-    { id: 10, voicePath: "/audio/audio.mp3", newari: "lakhamari", category: "food", level: 1 },
-  ];
 
   const [currentItem, setCurrentItem] = useState(null);
   const [options, setOptions] = useState([]);
@@ -70,11 +57,11 @@ export default function ExerciseFive({ level, category }) {
 
   return (
     <>
-      <h1>Exercise 4</h1>
+      <h1>Exercise 5</h1>
 
       {/* AUDIO PLAYER */}
       <div className="mb-4">
-        <audio ref={audioRef} src={currentItem.voicePath} />
+        <audio ref={audioRef} src={`http://127.0.0.1:8000/${currentItem.audio_path}`} />
         <div className="flex items-center gap-2">
           <button className="border px-3 py-1" onClick={toggleAudio}>
             {isPlaying ? "Stop Audio" : "Play Audio"}
@@ -91,7 +78,7 @@ export default function ExerciseFive({ level, category }) {
             className="border px-3 py-1"
             onClick={() => checkAnswer(opt)}
           >
-            {opt.newari}
+            {opt.english}
           </button>
         ))}
       </div>

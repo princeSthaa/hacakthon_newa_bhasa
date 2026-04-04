@@ -1,21 +1,8 @@
 import { useContext, useState, useEffect, useRef } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
-export default function ExerciseFour({ level, category, setExercise }) {
+export default function ExerciseFour({ level, category, setExercise, audioData }) {
   const { showAlert } = useContext(AlertContext);
-
-  const audioData = [
-    { id: 1, voicePath: "/audio/audio.mp3", english: "rice", category: "food", level: 1 },
-    { id: 2, voicePath: "/audio/audio.mp3", english: "lentil", category: "food", level: 1 },
-    { id: 3, voicePath: "/audio/audio.mp3", english: "spinach", category: "food", level: 1 },
-    { id: 4, voicePath: "/audio/audio.mp3", english: "corn", category: "food", level: 1 },
-    { id: 5, voicePath: "/audio/audio.mp3", english: "meat", category: "food", level: 1 },
-    { id: 6, voicePath: "/audio/audio.mp3", english: "egg", category: "food", level: 1 },
-    { id: 7, voicePath: "/audio/audio.mp3", english: "beaten rice", category: "food", level: 1 },
-    { id: 8, voicePath: "/audio/audio.mp3", english: "tea", category: "food", level: 1 },
-    { id: 9, voicePath: "/audio/audio.mp3", english: "alcohol", category: "food", level: 1 },
-    { id: 10, voicePath: "/audio/audio.mp3", english: "sweet", category: "food", level: 1 },
-  ];
 
   const [currentItem, setCurrentItem] = useState(null);
   const [options, setOptions] = useState([]);
@@ -75,7 +62,7 @@ export default function ExerciseFour({ level, category, setExercise }) {
 
       {/* AUDIO PLAYER */}
       <div className="mb-4">
-        <audio ref={audioRef} src={currentItem.voicePath} />
+        <audio ref={audioRef} src={`http://127.0.0.1:8000/${currentItem.audio_path}`} />
         <div className="flex items-center gap-2">
           <button className="border px-3 py-1" onClick={toggleAudio}>
             {isPlaying ? "Stop Audio" : "Play Audio"}

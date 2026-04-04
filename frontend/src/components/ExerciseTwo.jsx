@@ -1,20 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
-export default function ExerciseTwo({ level, category, setExercise }) {
-
-  const textData = [
-    { id: 1, newari: "ja", english: "rice", category: "food", level: 1 },
-    { id: 2, newari: "ke", english: "lentil", category: "food", level: 1 },
-    { id: 3, newari: "pachai", english: "spinach", category: "food", level: 1 },
-    { id: 4, newari: "kani", english: "corn", category: "food", level: 1 },
-    { id: 5, newari: "laa", english: "meat", category: "food", level: 1 },
-    { id: 6, newari: "khee", english: "egg", category: "food", level: 1 },
-    { id: 7, newari: "baji", english: "beaten rice", category: "food", level: 1 },
-    { id: 8, newari: "chya", english: "tea", category: "food", level: 1 },
-    { id: 9, newari: "thwon", english: "alcohol", category: "food", level: 1 },
-    { id: 10, newari: "lakhamari", english: "sweet", category: "food", level: 1 },
-  ];
+export default function ExerciseTwo({ level, category, setExercise, textData }) {
 
   const [questions, setQuestions] = useState([]);
   const [newariList, setNewariList] = useState([]);
@@ -25,18 +12,24 @@ export default function ExerciseTwo({ level, category, setExercise }) {
   const { showAlert } = useContext(AlertContext);
 
   useEffect(() => {
-    const filtered = textData.filter(
-      (item) => item.level === Number(level) && item.category === category
-    );
+  if (!textData || textData.length === 0) return;
 
-    if (filtered.length < 5) return;
+  const filtered = textData.filter(
+    (item) =>
+      Number(item.level) === Number(level) &&
+      item.category.toLowerCase() === category.toLowerCase()
+  );
 
-    const selected = filtered.sort(() => 0.5 - Math.random()).slice(0, 5);
-    setQuestions(selected);
+  if (filtered.length < 5) return;
 
-    setNewariList([...selected].sort(() => 0.5 - Math.random()));
-    setEnglishList([...selected].sort(() => 0.5 - Math.random()));
-  }, [level, category]);
+  const selected = [...filtered]
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 5);
+
+  setQuestions(selected);
+  setNewariList([...selected].sort(() => 0.5 - Math.random()));
+  setEnglishList([...selected].sort(() => 0.5 - Math.random()));
+}, [level, category, textData]);
 
   const handleMatch = (eng) => {
     if (!selectedNewari) return;

@@ -1,17 +1,8 @@
 import { useState, useEffect, useContext } from "react";
 import AlertContext from "../context/alert/AlertContext";
 
-export default function ExerciseThree({ level, category, setExercise }) {
+export default function ExerciseThree({ level, category, setExercise, pictureData}) {
   const { showAlert } = useContext(AlertContext);
-
-  const pictureData = [
-    { id: 1, imagepath: "/images/water.jpg", newari: "la", english: "water", category: "food", level: 1 },
-    { id: 2, imagepath: "/images/lentil.jpg", newari: "ke", english: "lentil", category: "food", level: 1 },
-    { id: 3, imagepath: "/images/spinach.jpg", newari: "pachai", english: "spinach", category: "food", level: 1 },
-    { id: 4, imagepath: "/images/corn.jpg", newari: "kani", english: "corn", category: "food", level: 1 },
-    { id: 5, imagepath: "/images/meat.jpg", newari: "laa", english: "meat", category: "food", level: 1 },
-    { id: 6, imagepath: "/images/alcohol.jpg", newari: "thwon", english: "alcohol", category: "food", level: 1 }
-  ];
 
   const [questions, setQuestions] = useState([]);
   const [options, setOptions] = useState([]);
@@ -19,10 +10,14 @@ export default function ExerciseThree({ level, category, setExercise }) {
   const [matched, setMatched] = useState([]);
 
   useEffect(() => {
+
+    if (!pictureData || pictureData.length === 0) return;
     // 1. filter
     const filtered = pictureData.filter(
-      (item) => item.level === Number(level) && item.category === category
-    );
+    (item) =>
+      Number(item.level) === Number(level) &&
+      item.category.toLowerCase() === category.toLowerCase()
+  );
 
     if (filtered.length < 5) return;
 
@@ -79,9 +74,9 @@ export default function ExerciseThree({ level, category, setExercise }) {
             } ${matched.includes(obj.id) ? "bg-green-200" : ""}`}
           >
             <img
-              src={obj.imagepath}
+              src={`${obj.image_path!==""?"http://127.0.0.1:8000/"+obj.image_path:"/defaultimage.png"}`}
               style={{ height: "140px", width: "140px", objectFit: "cover" }}
-            />
+              />
             <p>{obj.english}</p>
 
             {/* show newari after correct */}
