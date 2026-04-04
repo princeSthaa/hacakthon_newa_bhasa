@@ -46,3 +46,31 @@ def get_text(request, category, level):
     ]
 
     return JsonResponse(filtered, safe=False)
+
+def get_images(request, category, level):
+    file_path = os.path.join(
+        settings.BASE_DIR,
+        'newa_bhasa',
+        'Newari_Dataset',
+        category.lower(),
+        'image.json'
+    )
+
+    with open(file_path, encoding='utf-8') as f:
+        data = json.load(f)
+
+    filtered = []
+
+    for item in data:
+        if str(item.get('level')) == str(level):
+
+            # ✅ use image_path directly
+            image_path = item.get('image_path', '')
+
+            # build full URL
+            image_url = request.build_absolute_uri(image_path)
+
+            item['image_url'] = image_url
+            filtered.append(item)
+
+    return JsonResponse(filtered, safe=False)
