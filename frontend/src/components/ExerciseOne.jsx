@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import AlertContext from "../context/alert/AlertContext";
+import { unlockNextExercise } from "../utils/progress";
 
 export default function ExerciseOne({ level, category, setExercise }) {
   const { showAlert } = useContext(AlertContext);
@@ -70,10 +71,15 @@ export default function ExerciseOne({ level, category, setExercise }) {
     if (!currentItem) return;
 
     if (ans === currentItem.english) {
-      showAlert("Success", "Correct Answer!");
-      setExercise("2");
+      showAlert("Success", "Correct Answer! 🎉");
+
+      unlockNextExercise(level, 1);
+
+      setTimeout(() => {
+        setExercise("2");
+      }, 500);
     } else {
-      showAlert("Failure", "Incorrect Answer!");
+      showAlert("Failure", "Incorrect Answer! ❌");
     }
   };
 

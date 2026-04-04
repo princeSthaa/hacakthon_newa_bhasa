@@ -1,7 +1,10 @@
 import { useContext, useState, useEffect, useRef } from "react";
 import AlertContext from "../context/alert/AlertContext";
+import { unlockNextExercise } from "../utils/progress";
+import { isExerciseUnlocked } from "../utils/progress";
 
 export default function ExerciseFour({ level, category, setExercise, audioData }) {
+  if (!isExerciseUnlocked(level, 4)) return <p>🔒 Locked</p>;
   const { showAlert } = useContext(AlertContext);
 
   const [currentItem, setCurrentItem] = useState(null);
@@ -52,10 +55,17 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
 
   const checkAnswer = (selectedItem) => {
     if (selectedItem.id === currentItem.id) {
-      showAlert("Success", "Correct Answer!");
-      setExercise("5");
+      showAlert("Success", "Correct Answer! 🎉");
+
+      // ✅ unlock next exercise
+      unlockNextExercise(level, 4);
+
+      setTimeout(() => {
+        setExercise("5");
+      }, 500);
+
     } else {
-      showAlert("Failure", "Incorrect Answer!");
+      showAlert("Failure", "Incorrect Answer! ❌");
     }
   };
 

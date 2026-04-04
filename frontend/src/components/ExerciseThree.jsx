@@ -1,7 +1,10 @@
 import { useState, useEffect, useContext } from "react";
 import AlertContext from "../context/alert/AlertContext";
+import { unlockNextExercise } from "../utils/progress";
+import { isExerciseUnlocked } from "../utils/progress";
 
-export default function ExerciseThree({ level, category, setExercise, pictureData}) {
+export default function ExerciseThree({ level, category, setExercise, pictureData }) {
+  if (!isExerciseUnlocked(level, 3)) return <p>🔒 Locked</p>;
   const { showAlert } = useContext(AlertContext);
 
   const [questions, setQuestions] = useState([]);
@@ -47,12 +50,20 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
 
       setOptions((prev) => prev.filter((opt) => opt !== selectedNewari));
 
-      // move to next
+      // ✅ move to next OR finish
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(currentIndex + 1);
       } else {
-        setExercise("4");
+        // ✅ Exercise 3 completed
+        showAlert("Success", "Exercise Completed! 🎉");
+
+        unlockNextExercise(level, 3);
+
+        setTimeout(() => {
+          setExercise("4");
+        }, 500);
       }
+
     } else {
       showAlert("Failure", "Incorrect Answer!");
     }
@@ -72,12 +83,11 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
         {questions.map((obj, index) => (
           <div
             key={obj.id}
-            className={`border p-2 ${
-              index === currentIndex ? "border-blue-500 border-4" : ""
-            } ${matched.includes(obj.id) ? "bg-green-200" : ""}`}
+            className={`border p-2 ${index === currentIndex ? "border-blue-500 border-4" : ""
+              } ${matched.includes(obj.id) ? "bg-green-200" : ""}`}
           >
             <img
-              src={`${obj.image_path!==""?"http://127.0.0.1:8000/"+obj.image_path:"/defaultimage.png"}`}
+              src={`${obj.image_path !== "" ? "http://127.0.0.1:8000/" + obj.image_path : "/defaultimage.png"}`}
               style={{ height: "140px", width: "140px", objectFit: "cover" }}
             />
             <p>{obj.english}</p>

@@ -1,8 +1,18 @@
 import { useContext, useState, useEffect, useRef } from "react";
 import AlertContext from "../context/alert/AlertContext";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
+import { unlockNextExercise } from "../utils/progress";
+import { isExerciseUnlocked } from "../utils/progress";
+
 
 export default function ExerciseFive({ level, category, audioData }) {
+  if (!isExerciseUnlocked(level, 5)) {
+    return (
+      <p className="text-red-500 text-xl text-center mt-10">
+        🔒 Complete previous exercises first.
+      </p>
+    );
+  }
   let navigate = useNavigate();
   const { showAlert } = useContext(AlertContext);
 
@@ -55,7 +65,13 @@ export default function ExerciseFive({ level, category, audioData }) {
 
   const checkAnswer = (selectedItem) => {
     if (selectedItem.id === currentItem.id) {
+      showAlert("Success", "Correct Answer! 🎉");
+
+      // ✅ THIS LINE IS THE MOST IMPORTANT
+      unlockNextExercise(level, 5);  // ← unlocks NEXT LEVEL
+
       setDisplayLevelComplete(true);
+
     } else {
       showAlert("Failure", "Incorrect Answer!");
     }
@@ -115,7 +131,7 @@ export default function ExerciseFive({ level, category, audioData }) {
         <div className="confirm-modal-background">
           <div className="confirm-modal">
             <h1>Yay congratulation you completed level {level}</h1>
-            <button className="border" onClick={()=>{navigate("/dashboard")}}>Go to next Level</button>
+            <button className="border" onClick={() => { navigate("/dashboard") }}>Go to next Level</button>
           </div>
         </div>
       }
