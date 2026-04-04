@@ -88,17 +88,20 @@ export default function ExerciseOne({ level, category, setExercise }) {
   if (!currentItem) return <p>No questions available for this level/category.</p>;
 
   return (
-    <>
-      <h1>Exercise 1</h1>
-      <p>
-        What does <strong>{currentItem.newari}</strong> mean?
-      </p>
+    <div className="exercise-container">
+      <h1 className="exercise-title">Vocabulary Match</h1>
+      
+      <div className="exercise-question-box">
+        <p className="exercise-question-text">
+          What does <span className="exercise-highlight">{currentItem.newari}</span> mean?
+        </p>
+      </div>
 
-      <div className="flex gap-2 flex-wrap">
+      <div className="exercise-options-grid">
         {options.map((opt, index) => (
-          <button
-            key={index}
-            className="border px-2 py-1"
+          <button 
+            key={index} 
+            className="exercise-btn" 
             onClick={() => checkAnswer(opt)}
           >
             {opt}
@@ -106,20 +109,20 @@ export default function ExerciseOne({ level, category, setExercise }) {
         ))}
       </div>
 
-      <br />
-
-      <button
-        className="border px-2 py-1"
-        onClick={() => setAnswerHidden(!answerHidden)}
-      >
-        {answerHidden ? "Show Answer" : "Hide Answer"}
-      </button>
+      <div className="flex w-full mt-4 justify-center">
+        <button 
+          className="exercise-action-btn-secondary" 
+          onClick={() => setAnswerHidden(!answerHidden)}
+        >
+          {answerHidden ? "Show Answer 👁️" : "Hide Answer 🙈"}
+        </button>
+      </div>
 
       {!answerHidden && (
-        <p>
-          <strong>Answer:</strong> {currentItem.english}
-        </p>
+        <div className="exercise-answer-box">
+          Right Answer: {currentItem.english}
+        </div>
       )}
-    </>
+    </div>
   );
 }
