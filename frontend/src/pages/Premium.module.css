@@ -1,45 +1,37 @@
-:root {
-    --bg-color: #0f1115;
-    --card-bg: #1a1d23;
-    --maroon: #800000;
-    --maroon-hover: #a00000;
-    --text-main: #ffffff;
-    --text-muted: #a0a0a0;
-    --border-color: #2a2e35;
-}
-
 .container {
-    width: 95%;
-    max-width: 1200px;
-    padding: 40px 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px;
     text-align: center;
-    margin: 0 auto;
+    background-color: #F7F0E8; /* Matching Abhasa project bg */
+    color: #1A0A0A;
 }
 
-header h1 {
+.container header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: 700;
+    margin-bottom: 12px;
+    font-weight: 900;
+    color: #7A0000;
 }
 
-header p {
-    color: var(--text-muted);
-    margin-bottom: 50px;
-    font-size: 1.1rem;
+.container header p {
+    color: #6B5A53;
+    margin-bottom: 60px;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 .pricingGrid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     padding: 10px;
-    overflow-x: auto;
 }
 
 .card {
-    background-color: var(--card-bg);
-    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius: 24px;
     padding: 50px 30px;
     width: 320px;
     min-height: 550px;
@@ -48,40 +40,70 @@ header p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--border-color);
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid #E8D5CC;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
 }
 
 .featured {
-    border: 2px solid var(--maroon);
-    background-color: #161010;
-    transform: scale(1.05);
+    border: 3px solid #7A0000;
+    background-color: #FDF6EC;
+    transform: scale(1.04);
+    box-shadow: 0 16px 40px rgba(122, 0, 0, 0.08);
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    border-color: var(--maroon);
+    transform: translateY(-8px);
+    border-color: #7A0000;
+    box-shadow: 0 20px 40px rgba(122, 0, 0, 0.1);
+}
+
+.featured:hover {
+    transform: scale(1.04) translateY(-8px);
+}
+
+.bestValueBadge {
+    position: absolute;
+    top: -16px;
+    background-color: #7A0000;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(122, 0, 0, 0.2);
 }
 
 .card h2 {
     font-size: 1.1rem;
-    letter-spacing: 2px;
-    color: var(--text-muted);
+    letter-spacing: 2.5px;
+    color: #9A8880;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    margin-top: 0;
+    font-weight: 800;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.featured h2 {
+    color: #7A0000;
 }
 
 .price {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 35px;
+    color: #1A0A0A;
 }
 
 .price span {
-    font-size: 1rem;
-    color: var(--text-muted);
-    font-weight: 400;
+    font-size: 1.1rem;
+    color: #9A8880;
+    font-weight: 600;
+    display: block;
+    margin-top: 4px;
 }
 
 .features {
@@ -95,9 +117,10 @@ header p {
 }
 
 .features li {
-    margin-bottom: 15px;
-    color: var(--text-muted);
+    margin-bottom: 16px;
+    color: #6B5A53;
     font-size: 0.95rem;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,32 +128,44 @@ header p {
 }
 
 .features li::before {
-    content: '★';
-    color: var(--maroon);
+    content: '✓';
+    color: #7A0000;
     margin-right: 12px;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 900;
 }
 
 .btn {
-    background-color: var(--maroon);
-    color: white;
-    border: none;
+    background-color: transparent;
+    color: #7A0000;
+    border: 2px solid #7A0000;
     padding: 16px 0;
-    border-radius: 12px;
+    border-radius: 999px;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 800;
     cursor: pointer;
     width: 100%;
     margin-top: auto;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: background 0.2s ease, transform 0.1s ease;
+    transition: all 0.2s ease;
 }
 
 .btn:hover {
-    background-color: var(--maroon-hover);
+    background-color: #7A0000;
+    color: white;
+}
+
+.featured .btn {
+    background-color: #7A0000;
+    color: white;
+}
+
+.featured .btn:hover {
+    background-color: #5c0000;
+    border-color: #5c0000;
 }
 
 .btn:active {
-    transform: scale(0.98);
+    transform: scale(0.96);
 }

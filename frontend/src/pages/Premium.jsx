@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./Premium.module.css"; // Import CSS module
+import styles from "./Premium.module.css"; // Corrected import to .module.css
 
 export default function Premium() {
     const plans = [
@@ -14,7 +13,7 @@ export default function Premium() {
             title: "ANNUAL",
             price: 7500,
             duration: "1 Year",
-            features: ["Standard Support", "Full Access Levels", "Weekly Updates", "Ai Assistance"],
+            features: ["Standard Support", "Full Access Levels", "Weekly Updates", "Ai Assistance", "Priority Email Support"],
             featured: true,
         },
         {
@@ -39,6 +38,7 @@ export default function Premium() {
                         key={index}
                         className={`${styles.card} ${plan.featured ? styles.featured : ""}`}
                     >
+                        {plan.featured && <div className={styles.bestValueBadge}>Best Value</div>}
                         <h2>{plan.title}</h2>
                         <div className={styles.price}>
                             Rs.{plan.price}<span>/ {plan.duration}</span>
