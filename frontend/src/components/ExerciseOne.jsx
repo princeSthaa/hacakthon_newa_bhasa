@@ -122,7 +122,7 @@ export default function ExerciseOne({ level, category, setExercise }) {
 
       {!answerHidden && (
         <div className="exercise-answer-box">
-          Right Answer: {currentItem.english}
+          Answer: {currentItem.english}
         </div>
       )}
     </div>

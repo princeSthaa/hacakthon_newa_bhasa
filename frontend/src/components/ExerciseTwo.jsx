@@ -142,8 +142,8 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
       </div>
 
       {!answerHidden && (
-        <div className="exercise-answer-box text-left w-full">
-          <strong>Answers:</strong>
+        <div className="exercise-answer-box t w-full">
+          <p className="text-center"><strong>Answers:</strong></p>
           <ul className="list-disc ml-5 mt-2 text-sm">
             {questions.map((q) => (
               <li key={q.id}>

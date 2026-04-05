@@ -151,7 +151,7 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
       {/* ✅ Answer Display */}
       {!answerHidden && (
         <div className="exercise-answer-box text-left w-full mt-4">
-          <strong>Answers:</strong>
+          <p className="text-center"><strong>Answers:</strong></p>
           <ul className="list-disc ml-5 mt-2 text-sm">
             {questions.map((q) => (
               <li key={q.id}>

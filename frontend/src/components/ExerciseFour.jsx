@@ -137,8 +137,8 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
 
       {/* ✅ Answer Display */}
       {!answerHidden && (
-        <div className="exercise-answer-box text-center w-full mt-4">
-          <strong>Answer:</strong> <span className="font-bold text-[#7A0000] ml-2 text-lg">{currentItem.english}</span>
+        <div className="exercise-answer-box">
+          Answer: {currentItem.english}
         </div>
       )}
     </div>
