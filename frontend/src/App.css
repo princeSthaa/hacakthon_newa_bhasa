@@ -243,3 +243,16 @@
   color: white;
   box-shadow: 0 6px 16px rgba(122, 0, 0, 0.25);
 }
+
+@keyframes bounce-2 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.bounce-2 {
+  animation: bounce-2 1.5s infinite;
+}
