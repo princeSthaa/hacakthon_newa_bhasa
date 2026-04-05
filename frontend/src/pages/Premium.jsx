@@ -1,6 +1,8 @@
 import styles from "./Premium.module.css"; // Corrected import to .module.css
+import { useNavigate } from "react-router";
 
 export default function Premium() {
+    let navigate = useNavigate();
     const plans = [
         {
             title: "QUARTERLY",
@@ -27,6 +29,17 @@ export default function Premium() {
 
     return (
         <div className={styles.container}>
+            <div className="flex w-full pl-8">
+            <button
+                    onClick={() => navigate("/dashboard")}
+                    className="confirm-btn confirm-btn-confirm"
+                    style={{ fontSize: 13, fontWeight: 700, cursor: "pointer" }}
+                >
+                Back
+                </button>
+
+            </div>
+
             <header>
                 <h1>To continue, please choose your plan</h1>
                 <p>Select the duration that best fits your needs. No hidden fees.</p>

@@ -153,13 +153,14 @@ export default function Level() {
                 position: "sticky", top: 0, zIndex: 20,
                 background: "rgba(253,246,236,0.94)", backdropFilter: "blur(8px)",
                 borderBottom: "1px solid #E8D5CC",
-                padding: "13px 20px", display: "flex", alignItems: "center", gap: 12,
+                padding: "13px 20px", display: "flex", alignItems: "center", gap: 20,
             }}>
                 <button
                     onClick={() => navigate("/dashboard")}
-                    style={{ fontSize: 13, fontWeight: 700, color: "#7A0000", background: "none", border: "none", cursor: "pointer" }}
+                    className="confirm-btn confirm-btn-confirm"
+                    style={{ fontSize: 13, fontWeight: 700, cursor: "pointer" }}
                 >
-                    ← Back
+                Back
                 </button>
                 <div style={{ flex: 1 }}>
                     <p style={{ margin: 0, fontSize: 11, color: "#9A8880", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>

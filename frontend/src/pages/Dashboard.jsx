@@ -11,7 +11,29 @@ function Dashboard() {
     let navigate = useNavigate();
     const user = JSON.parse(localStorage.getItem("user"));
 
-    const [contentChoice, setContentChoice] = useState("profile");
+    const [contentChoice, setContentChoice] = useState(localStorage.getItem("contentChoice")?localStorage.getItem("contentChoice"):"profile");
+
+  const ChangeContent = (content) => {
+    switch(content){
+      case 1:
+        localStorage.setItem("contentChoice", "profile");
+        break;
+      case 2:
+        localStorage.setItem("contentChoice", "progress");
+        break;
+      case 3:
+        localStorage.setItem("contentChoice", "leaderboard");
+        break;
+      case 4:
+        localStorage.setItem("contentChoice", "levels");
+        break;
+      default:
+        localStorage.setItem("contentChoice", "profile");
+        break;      
+    }
+    setContentChoice(localStorage.getItem("contentChoice"));
+  }
+   
 
     const { showAlert } = useContext(AlertContext);
     const { showConfirm } = useContext(ConfirmContext);
@@ -43,10 +65,10 @@ function Dashboard() {
                     <h1>Newa Bhasa</h1>
                 </div>
                 <div className="flex flex-col items-start gap-2">
-                    <button className="dash-nav-btn" onClick={() => { setContentChoice("profile") }}>Profile</button>
-                    <button className="dash-nav-btn" onClick={() => { setContentChoice("progress") }}>Progress</button>
-                    <button className="dash-nav-btn" onClick={() => { setContentChoice("leaderboard") }}>Leader Board</button>
-                    <button className="dash-nav-btn" onClick={() => { setContentChoice("levels") }}>Levels</button>
+                    <button className="dash-nav-btn" onClick={() => { ChangeContent(1) }}>Profile</button>
+                    <button className="dash-nav-btn" onClick={() => { ChangeContent(2) }}>Progress</button>
+                    <button className="dash-nav-btn" onClick={() => { ChangeContent(3) }}>Leader Board</button>
+                    <button className="dash-nav-btn" onClick={() => { ChangeContent(4) }}>Levels</button>
                     <button className="dash-nav-btn" onClick={() => { handleSignOut() }}>Sign out</button>
                 </div>
             </div>
