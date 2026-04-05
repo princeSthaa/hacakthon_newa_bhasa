@@ -23,7 +23,7 @@ export default function Profile() {
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
 
         <div className="bg-white rounded-2xl p-5 border border-[#F0E0D0] shadow-sm">
-          <p className="text-2xl font-extrabold text-[#1A0A0A]">1240</p>
+          <p className="text-2xl font-extrabold text-[#1A0A0A]">{localStorage.getItem("xp")}</p>
           <p className="text-xs text-gray-500 uppercase">Total XP</p>
         </div>
 

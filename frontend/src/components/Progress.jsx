@@ -48,13 +48,16 @@ export default function Progress() {
     <div className="flex flex-col gap-6">
 
       {/* ─── HEADER ─── */}
-      <div>
-        <h2 className="text-2xl font-extrabold text-[#1A0A0A]">
-          Your Progress
-        </h2>
-        <p className="text-gray-500 text-sm">
-          {completedLevels} of {totalLevels} levels completed
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-2xl font-extrabold text-[#1A0A0A]">
+            Your Progress
+          </h2>
+          <p className="text-gray-500 text-sm">
+            {completedLevels} of {totalLevels} levels completed
+          </p>
+        </div>
+        <p className="text-gray-500"><b>{localStorage.getItem("xp")} XP</b></p>
       </div>
 
       {/* ─── OVERALL PROGRESS ─── */}

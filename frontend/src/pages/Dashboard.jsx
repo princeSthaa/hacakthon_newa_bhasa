@@ -46,6 +46,7 @@ function Dashboard() {
             localStorage.removeItem("userLoggedIn");
             localStorage.removeItem("contentChoice");
             localStorage.removeItem("newari_progress_v1");
+            localStorage.removeItem("xp");
             showAlert("Success", "You've signed out. See you next time!");
         }
     }

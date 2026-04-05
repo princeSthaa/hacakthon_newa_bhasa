@@ -20,6 +20,7 @@ export default function UserState(props) {
             localStorage.setItem("user", JSON.stringify(res.data.user));
             localStorage.setItem("userLoggedIn", true);
             localStorage.setItem("contentChoice", "profile");
+            localStorage.setItem("xp", 0);
             navigate("/dashboard");
             showAlert("Success", "Login successfull!");
         } catch (err) {
