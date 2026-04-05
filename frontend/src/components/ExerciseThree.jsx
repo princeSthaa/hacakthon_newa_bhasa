@@ -58,7 +58,9 @@ export default function ExerciseThree({ level, category, setExercise, pictureDat
         showAlert("Success", "Exercise Completed! 🎉");
 
         unlockNextExercise(level, 3);
-
+        let xp = Number(localStorage.getItem("xp"))+100;
+        localStorage.setItem("xp", xp);
+        
         setTimeout(() => {
           setExercise("4");
         }, 500);

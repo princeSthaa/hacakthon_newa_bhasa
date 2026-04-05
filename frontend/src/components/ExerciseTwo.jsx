@@ -56,6 +56,8 @@ export default function ExerciseTwo({ level, category, setExercise, textData }) 
         showAlert("Success", "Exercise Completed! 🎉");
 
         unlockNextExercise(level, 2);
+        let xp = Number(localStorage.getItem("xp"))+100;
+        localStorage.setItem("xp", xp);
 
         setTimeout(() => {
           setExercise("3");

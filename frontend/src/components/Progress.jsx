@@ -57,7 +57,7 @@ export default function Progress() {
             {completedLevels} of {totalLevels} levels completed
           </p>
         </div>
-        <p className="text-gray-500"><b>{localStorage.getItem("xp")} XP</b></p>
+        <p className="text-gray-900"><b>{localStorage.getItem("xp")} XP</b></p>
       </div>
 
       {/* ─── OVERALL PROGRESS ─── */}

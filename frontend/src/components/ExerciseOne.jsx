@@ -74,6 +74,8 @@ export default function ExerciseOne({ level, category, setExercise }) {
       showAlert("Success", "Correct Answer! 🎉");
 
       unlockNextExercise(level, 1);
+      let xp = Number(localStorage.getItem("xp"))+100;
+      localStorage.setItem("xp", xp);
 
       setTimeout(() => {
         setExercise("2");

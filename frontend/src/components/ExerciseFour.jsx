@@ -61,6 +61,8 @@ export default function ExerciseFour({ level, category, setExercise, audioData }
 
       // ✅ unlock next exercise
       unlockNextExercise(level, 4);
+      let xp = Number(localStorage.getItem("xp"))+100;
+      localStorage.setItem("xp", xp);
 
       setTimeout(() => {
         setExercise("5");

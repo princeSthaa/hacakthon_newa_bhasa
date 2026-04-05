@@ -57,7 +57,7 @@ export default function Profile() {
 
           <div className="flex justify-between">
             <span className="text-gray-500">Member Since</span>
-            <span className="font-medium text-[#1A0A0A]">2024</span>
+            <span className="font-medium text-[#1A0A0A]">2026</span>
           </div>
         </div>
 

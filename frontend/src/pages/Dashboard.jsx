@@ -117,6 +117,8 @@ function Dashboard() {
       <div className="max-w-5xl mx-auto px-6 py-8">
 
         {/* header */}
+        <div className="flex items-center justify-between">
+
         <div className="mb-8">
           <p className="text-sm text-[#7A0000] font-semibold uppercase tracking-widest">
             Dashboard
@@ -129,6 +131,11 @@ function Dashboard() {
           <p className="text-gray-500 text-sm mt-1">
             {user?.email}
           </p>
+        </div>
+        {
+          contentChoice==="levels"&&
+          <p className="text-gray-900"><b>{localStorage.getItem("xp")} XP</b></p>
+        }
         </div>
 
         {/* content card wrapper */}

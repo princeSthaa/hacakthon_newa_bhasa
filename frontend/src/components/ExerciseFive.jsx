@@ -70,6 +70,8 @@ export default function ExerciseFive({ level, category, audioData }) {
 
       // ✅ THIS LINE IS THE MOST IMPORTANT
       unlockNextExercise(level, 5);  // ← unlocks NEXT LEVEL
+      let xp = Number(localStorage.getItem("xp"))+125;
+      localStorage.setItem("xp", xp);
 
       setDisplayLevelComplete(true);
 

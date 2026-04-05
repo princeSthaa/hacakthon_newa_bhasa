@@ -170,6 +170,7 @@ export default function Level() {
                         Level {id}
                     </p>
                 </div>
+                <p className="text-gray-900"><b>{localStorage.getItem("xp")} XP</b></p>
                 {/* progress pips */}
                 <div style={{ display: "flex", gap: 5 }}>
                     {EXERCISES.map((n) => (
