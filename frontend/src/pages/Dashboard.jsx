@@ -58,44 +58,90 @@ function Dashboard() {
     }, []);
 
     return (
-        <>
-            <div className="fixed h-full w-3xs bg-gray-300 p-4">
-                <div className="flex gap-2 mb-8">
-                    <h1>Logo goes here</h1>
-                    <h1>Newa Bhasa</h1>
-                </div>
-                <div className="flex flex-col items-start gap-2">
-                    <button className="dash-nav-btn" onClick={() => { ChangeContent(1) }}>Profile</button>
-                    <button className="dash-nav-btn" onClick={() => { ChangeContent(2) }}>Progress</button>
-                    <button className="dash-nav-btn" onClick={() => { ChangeContent(3) }}>Leader Board</button>
-                    <button className="dash-nav-btn" onClick={() => { ChangeContent(4) }}>Levels</button>
-                    <button className="dash-nav-btn" onClick={() => { handleSignOut() }}>Sign out</button>
-                </div>
-            </div>
-            <div className="pt-4 pl-72 pr-4">
-                <div className="flex">
-                    <h3>Welcome, {user?.name}</h3>
-                    <p>&nbsp;| {user?.email}</p>
-                </div>
-                {
-                    contentChoice === "profile" &&
-                    <Profile />
-                }
-                {
-                    contentChoice === "progress" &&
-                    <Progress />
-                }
-                {
-                    contentChoice === "leaderboard" &&
-                    <LeaderBoard />
-                }
-                {
-                    contentChoice === "levels" &&
-                    <Levels />
-                }
-            </div>
-        </>
-    );
+  <>
+    {/* ───── SIDEBAR ───── */}
+    <div className="fixed h-full w-72 bg-[#FDF6EC] border-r border-[#E8D5CC] p-5 flex flex-col">
+
+      {/* logo */}
+      <div className="flex items-center gap-2 mb-10 px-1">
+        <span className="font-extrabold text-lg text-[#7A0000] tracking-tight">
+        न Nepal Bhasa
+        </span>
+      </div>
+
+      {/* nav buttons */}
+      <div className="flex flex-col gap-2 flex-1">
+        <button
+          onClick={() => ChangeContent(1)}
+          className={`dash-nav-btn ${contentChoice === "profile" && "active"}`}
+        >
+          🧑 Profile
+        </button>
+
+        <button
+          onClick={() => ChangeContent(2)}
+          className={`dash-nav-btn ${contentChoice === "progress" && "active"}`}
+        >
+          📈 Progress
+        </button>
+
+        <button
+          onClick={() => ChangeContent(3)}
+          className={`dash-nav-btn ${contentChoice === "leaderboard" && "active"}`}
+        >
+          🏆 Leaderboard
+        </button>
+
+        <button
+          onClick={() => ChangeContent(4)}
+          className={`dash-nav-btn ${contentChoice === "levels" && "active"}`}
+        >
+          🗺️ Levels
+        </button>
+      </div>
+
+      {/* sign out */}
+      <div className="border-t border-[#E8D5CC] pt-4">
+        <button
+          onClick={handleSignOut}
+          className="dash-nav-btn text-gray-500 hover:bg-red-50 hover:text-[#7A0000]"
+        >
+          🚪 Sign Out
+        </button>
+      </div>
+    </div>
+
+    {/* ───── MAIN CONTENT ───── */}
+    <div className="pl-72 min-h-screen bg-[#F7F0E8]">
+      <div className="max-w-5xl mx-auto px-6 py-8">
+
+        {/* header */}
+        <div className="mb-8">
+          <p className="text-sm text-[#7A0000] font-semibold uppercase tracking-widest">
+            Dashboard
+          </p>
+
+          <h1 className="text-3xl font-extrabold text-[#1A0A0A] mt-1">
+            Welcome, {user?.name} 👋
+          </h1>
+
+          <p className="text-gray-500 text-sm mt-1">
+            {user?.email}
+          </p>
+        </div>
+
+        {/* content card wrapper */}
+        <div className="bg-white rounded-2xl border border-[#F0E0D0] shadow-sm p-6">
+          {contentChoice === "profile" && <Profile />}
+          {contentChoice === "progress" && <Progress />}
+          {contentChoice === "leaderboard" && <LeaderBoard />}
+          {contentChoice === "levels" && <Levels />}
+        </div>
+
+      </div>
+    </div>
+  </>
+);
 }
 
 export default Dashboard;
